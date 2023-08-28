@@ -10,7 +10,7 @@
   &__images {
     position: relative;
     height: 370px;
-    @include bg-i("../../images/konsultacija-bg.png", 730px, bottom);
+    @include bg-i('../../images/konsultacija-bg.png', 730px, bottom);
 
     @include onTablet {
       grid-column: 1;

@@ -16,7 +16,6 @@
   }
 }
 
-
 @mixin onDesktop {
   @media screen and (min-width: 1260px) {
     @content;
@@ -30,7 +29,7 @@
   background-position: $position;
 }
 
-@mixin text ($size: 16px, $weight: 400, $l-spase: 0) {
+@mixin text($size: 16px, $weight: 400, $l-spase: 0) {
   font-family: 'Roboto', sans-serif;
   letter-spacing: $l-spase;
   font-weight: $weight;

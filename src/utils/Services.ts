@@ -30,7 +30,8 @@ export const services: Service[] = [
     url: 'washing',
     img: '5',
     id: 5,
-  }, {
+  },
+  {
     title: 'Garbage Disposal',
     url: 'garbage',
     img: '6',

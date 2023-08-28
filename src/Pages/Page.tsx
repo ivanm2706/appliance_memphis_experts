@@ -6,8 +6,8 @@ import { Header } from '../components/Header';
 // import Steps from '../components/Steps/Steps';
 
 type Props = {
-  children: ReactNode,
-  isHomePage?: boolean,
+  children: ReactNode;
+  isHomePage?: boolean;
 };
 
 function Page({ children, isHomePage }: Props) {
@@ -23,7 +23,7 @@ function Page({ children, isHomePage }: Props) {
       <Header isHomePage={isHomePage || false} />
 
       <main className="page__main">
-        { children }
+        {children}
 
         {/* <Benefits />
 

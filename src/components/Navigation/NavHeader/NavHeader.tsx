@@ -5,17 +5,16 @@ import { Logo } from '../../Logo';
 import NavList from '../NavList/NavList';
 
 type Props = {
-  setIsActiveMenuMobile: React.Dispatch<React.SetStateAction<boolean>>,
-}
+  setIsActiveMenuMobile: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-export function NavHeader({
-  setIsActiveMenuMobile,
-}: Props) {
+export function NavHeader({ setIsActiveMenuMobile }: Props) {
   const [isBigHeaderLine, setIsBigHeaderLine] = useState(true);
 
   useEffect(() => {
     const handlerScroll = () => {
-      const scrollingElement = document.scrollingElement || document.documentElement;
+      const scrollingElement =
+        document.scrollingElement || document.documentElement;
       const { scrollTop } = scrollingElement;
 
       if (scrollTop > 100) {
@@ -24,7 +23,6 @@ export function NavHeader({
         setIsBigHeaderLine(true);
       }
     };
-
 
     window.addEventListener('scroll', handlerScroll);
 

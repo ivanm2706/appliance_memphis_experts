@@ -15,7 +15,7 @@ export function Header({ isHomePage }: { isHomePage: boolean }) {
     const arr: Service[] | Navigation[] = service ? services : navigationList;
     const url = service ? service : location.pathname.substring(1);
 
-    return arr.find(item => item.url === url);
+    return arr.find((item) => item.url === url);
   };
 
   const lastObjNav = getObjNav() || null;
@@ -29,9 +29,7 @@ export function Header({ isHomePage }: { isHomePage: boolean }) {
     >
       <div className="header__background-shadow" />
 
-      <div
-        className="header__content"
-      >
+      <div className="header__content">
         <div className="header__titles">
           {isHomePage ? (
             <>
@@ -39,14 +37,10 @@ export function Header({ isHomePage }: { isHomePage: boolean }) {
                 Professional & Highly Rated Appliance
               </p>
 
-              <p className="header__title">
-                Repair Your Family Can Count On!
-              </p>
+              <p className="header__title">Repair Your Family Can Count On!</p>
             </>
           ) : (
-            <p className="header__title">
-              { lastObjNav?.title }
-            </p>
+            <p className="header__title">{lastObjNav?.title}</p>
           )}
         </div>
 
@@ -58,12 +52,8 @@ export function Header({ isHomePage }: { isHomePage: boolean }) {
             Book online
           </NavLink>
         ) : (
-          <History
-            service={service}
-            lastObjNav={lastObjNav}
-          />
+          <History service={service} lastObjNav={lastObjNav} />
         )}
-
       </div>
     </header>
   );

@@ -8,8 +8,8 @@
 
   &--dark {
     box-shadow: none;
-    background-color: #213F76;
-    @include bg-i("../../images/texture-on-dark.png");
+    background-color: #213f76;
+    @include bg-i('../../images/texture-on-dark.png');
     color: $WhiteColor;
 
     & .common-repair__description {

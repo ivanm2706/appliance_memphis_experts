@@ -3,18 +3,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 type Props = {
-  isBig?: boolean,
-  isFooter?: boolean
+  isBig?: boolean;
+  isFooter?: boolean;
 };
 
-export function Logo({
-  isBig,
-  isFooter,
-}: Props) {
+export function Logo({ isBig, isFooter }: Props) {
   return (
-    <div
-      className="logo"
-    >
+    <div className="logo">
       <NavLink to="/" replace>
         <img
           className={classNames({

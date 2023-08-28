@@ -9,7 +9,6 @@
   }
 
   &--block-wrap {
-
     & > li {
       max-width: fit-content;
     }
@@ -46,7 +45,7 @@
       position: absolute;
       width: 15px;
       height: 15px;
-      @include bg-i("../../images/icons/tick.svg");
+      @include bg-i('../../images/icons/tick.svg');
       left: 15px;
       top: 1px;
     }

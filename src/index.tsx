@@ -6,11 +6,11 @@ import { App } from './App';
 
 const rootElement = document.getElementById('root');
 
-if(rootElement) {
+if (rootElement) {
   const root = createRoot(rootElement);
   root.render(
     <HashRouter>
       <App />
-    </HashRouter>
+    </HashRouter>,
   );
 }

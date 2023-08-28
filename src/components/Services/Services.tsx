@@ -12,7 +12,7 @@ export function Services() {
         </h2>
 
         <div className="cards">
-          {services.map(service => (
+          {services.map((service) => (
             <Card service={service} key={service.id} />
           ))}
         </div>

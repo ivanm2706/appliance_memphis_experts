@@ -10,11 +10,15 @@ export function Footer() {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
 
-  const handlerInputPhone = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
+  const handlerInputPhone = ({
+    target: { value },
+  }: React.ChangeEvent<HTMLInputElement>) => {
     setPhone(value);
   };
 
-  const handlerInputName = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
+  const handlerInputName = ({
+    target: { value },
+  }: React.ChangeEvent<HTMLInputElement>) => {
     setName(value);
   };
 
@@ -26,17 +30,16 @@ export function Footer() {
       phone,
     };
 
-    emailjs.send(
-      'service_bno6lq8',
-      'template_n5yq677',
-      data,
-      'q_x__o2rJsUO-X2Un',
-    )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      }, (err) => {
-        console.log('FAILED...', err);
-      });
+    emailjs
+      .send('service_bno6lq8', 'template_n5yq677', data, 'q_x__o2rJsUO-X2Un')
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (err) => {
+          console.log('FAILED...', err);
+        },
+      );
 
     setName('');
     setPhone('');
@@ -58,9 +61,7 @@ export function Footer() {
               </li>
 
               <li className="contacts__contacts-item">
-                <p
-                  className="miniContact miniContact--shedule"
-                >
+                <p className="miniContact miniContact--shedule">
                   Mon - fri: 09:00-19:00
                   <br />
                   Sat.: 10:00-16:00
@@ -91,10 +92,7 @@ export function Footer() {
               placeholder="Phome number*"
             />
 
-            <button
-              type="submit"
-              className="button button--book button--long"
-            >
+            <button type="submit" className="button button--book button--long">
               send
             </button>
           </form>

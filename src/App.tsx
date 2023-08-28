@@ -18,67 +18,44 @@ export const App = () => {
 
         <Route
           path="*"
-          element={(
+          element={
             <div className="notification notification--error">
               <p>Page not found</p>
             </div>
-          )}
+          }
         />
 
         <Route
           path="/"
-          element={(
+          element={
             <Page isHomePage>
               <HomePage />
             </Page>
-          )}
+          }
         />
 
         <Route
           path="/services"
-          element={(
-            <Page>
-              {/* <ServicesPage /> */}
-            </Page>
-          )}
+          element={<Page>{/* <ServicesPage /> */}</Page>}
         />
 
         <Route
           path="/services/:service"
-          element={(
-            <Page>
-              {/* <DetailsPage /> */}
-            </Page>
-          )}
+          element={<Page>{/* <DetailsPage /> */}</Page>}
         />
 
         <Route
           path="/blog"
-          element={(
+          element={
             <Page>
               <div className="example">blog</div>
             </Page>
-          )}
+          }
         />
 
-        <Route
-          path="/company"
-          element={(
-            <Page>
-              {/* <CompanyPage /> */}
-            </Page>
-          )}
-        />
+        <Route path="/company" element={<Page>{/* <CompanyPage /> */}</Page>} />
 
-        <Route
-          path="/contact"
-          element={(
-            <Page>
-              {/* <ContactPage /> */}
-            </Page>
-          )}
-        />
-
+        <Route path="/contact" element={<Page>{/* <ContactPage /> */}</Page>} />
       </Routes>
     </>
   );
