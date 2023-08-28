@@ -1,0 +1,39 @@
+.slogan {
+  
+  &__slogan {
+    position: relative;
+    max-width: 1000px;
+    margin-inline: auto;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  &__img-slogan {
+    text-align: center;
+  }
+
+  &__image-slogan {
+    max-width: 500px;
+  }
+
+  &__title-slogan {
+    @include text(16px, 400, 1.2px);
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  
+  &__icon {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    top: -17px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    @include bg-i('../../images/icons/quotes.svg');
+    background-color: $main;
+  }
+}

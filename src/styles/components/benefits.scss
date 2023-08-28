@@ -1,0 +1,33 @@
+.benefits {
+  padding-inline: 20px;
+
+  @include onDesktop {
+    padding-inline: 0;
+  }
+  
+  &__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 90px 90px 90px;
+    position: relative;
+    z-index: 52;
+    color: $WhiteColor;
+
+    @include onTablet {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 90px 90px;
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    margin-left: 50px;
+  }
+
+  &__content {
+    @include text(16px, 400);
+    line-height: 1.5;
+    max-width: 460px;
+  }
+}

@@ -1,0 +1,143 @@
+.common-repair {
+  position: relative;
+  margin-inline: 10px;
+  padding: 35px;
+  background-color: #ffffff4d;
+  border-radius: 12px;
+  box-shadow: rgba(3, 115, 175, 0.2) 0px 0px 30px 0px;
+
+  &--dark {
+    box-shadow: none;
+    background-color: #213F76;
+    @include bg-i("../../images/texture-on-dark.png");
+    color: $WhiteColor;
+
+    & .common-repair__description {
+      color: $WhiteColor;
+    }
+  }
+
+  &--mb20 {
+    margin-bottom: 20px;
+  }
+
+  &__border {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid #bad8eb;
+    border-radius: 12px;
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    @include text(30px, 800);
+    color: $main;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: $textColor;
+    @include text(16px, 400);
+    line-height: 28.56px;
+
+    &--center {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    @include text(16.8px);
+    color: $textColor;
+    line-height: 28.56px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+    & > :not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    @include text(16.8px);
+    color: $textColor;
+    line-height: 28.56px;
+
+    &--mb20 {
+      margin-bottom: 20px;
+    }
+
+    &--pseudo {
+      position: relative;
+      margin-left: 40px;
+
+      &::before {
+        content: '1.';
+        display: block;
+        position: absolute;
+        left: -18px;
+      }
+    }
+
+    &--1 {
+      &::before {
+        content: '1.';
+      }
+    }
+
+    &--2 {
+      &::before {
+        content: '2.';
+      }
+    }
+
+    &--3 {
+      &::before {
+        content: '3.';
+      }
+    }
+
+    &--4 {
+      &::before {
+        content: '4.';
+      }
+    }
+  }
+
+  &__block {
+    @include onSmallDesktop {
+      display: flex;
+      gap: 25px;
+    }
+  }
+
+  &__block-width30 {
+    @include onSmallDesktop {
+      width: 40%;
+      align-self: center;
+    }
+  }
+
+  &__block-width70 {
+    @include onSmallDesktop {
+      width: 60%;
+      align-self: center;
+    }
+  }
+
+  &__block-o-1 {
+    order: 1;
+  }
+
+  &__block-o-2 {
+    order: 2;
+  }
+}

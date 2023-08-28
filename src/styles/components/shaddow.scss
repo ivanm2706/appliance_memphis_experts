@@ -1,0 +1,25 @@
+.shaddow {
+  position: absolute;
+  
+  &--open {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $shadowColor;
+    z-index: 40;
+  }
+
+  &--mobile-navigation {
+    position: fixed;
+    z-index: 61;
+  }
+
+  &--open-mobile-navigation {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #18172a87;
+  }
+}

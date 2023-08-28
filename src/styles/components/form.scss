@@ -1,0 +1,61 @@
+.form {
+  &__title {
+    @include text(16px, 700);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  & > input {
+    width: 100%;
+  }
+
+  & input {
+    display: block;
+    padding: 5px;
+    background-color: #f8f8fa;
+    border-radius: 2px;
+    border: 1px solid $WhiteColor;
+    background-color: transparent;
+    color: $WhiteColor;
+    @include text(16px, 400);
+
+    &::placeholder {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #7e7e83;
+    }
+
+    &:hover {
+      border: 1px solid #d5d7de;
+    }
+
+    &:focus {
+      outline: 1px solid $WhiteColor;
+    }
+
+    &:-webkit-autofill:focus {
+      border: 1px solid $WhiteColor;
+    }
+
+    &:-webkit-autofill {
+      border: 1px solid $WhiteColor;
+      -webkit-text-fill-color: $WhiteColor !important;
+      box-shadow: 0 0 0 1000px $first inset !important;
+    }
+  }
+
+  & > :not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__input-container {
+    display: flex;
+    justify-content: space-between;
+
+    & > input {
+      width: 49.7%;
+    }
+  }
+}

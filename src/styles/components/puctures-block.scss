@@ -1,0 +1,27 @@
+.puctures-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 5px;
+
+  @include onMiniTablet {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+
+  & > :last-child {
+    @media screen and (max-width: 463px) {
+      grid-column: 1/3;
+    }
+  }
+
+  &__text {
+    @include text(13px);
+    text-align: center;
+
+    &--mb30 {
+      margin-bottom: 30px;
+    }
+  }
+}

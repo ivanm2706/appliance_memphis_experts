@@ -1,0 +1,11 @@
+.ourTeam {
+  &__title {
+    @include text(17px);
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+  }
+}
