@@ -5,8 +5,9 @@ import { benefits } from '../../utils/Benefits';
 export function Benefits() {
   const h2Ref = useRef<HTMLHeadingElement | null>(null);
   const items = [1, 2, 3, 4];
-  const itemRefs: React.RefObject<HTMLDivElement>[] = items
-    .map(() => useRef(null));
+  const itemRefs: React.RefObject<HTMLDivElement>[] = items.map(() =>
+    useRef(null),
+  );
 
   const observerOptions: IntersectionObserverInit = {
     root: null,
@@ -15,7 +16,7 @@ export function Benefits() {
   };
 
   const handleIntersection: IntersectionObserverCallback = (entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       let classAnimated = 'animate--opacity-active';
 
       if (entry.target.localName === 'div') {
@@ -32,13 +33,16 @@ export function Benefits() {
 
   useEffect(() => {
     // Используем общую логику для наблюдения за видимостью
-    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions,
+    );
 
     if (h2Ref.current) {
       observer.observe(h2Ref.current);
     }
 
-    itemRefs.forEach(itemRef => {
+    itemRefs.forEach((itemRef) => {
       if (itemRef.current) {
         observer.observe(itemRef.current);
       }
@@ -48,7 +52,7 @@ export function Benefits() {
       if (h2Ref.current) {
         observer.unobserve(h2Ref.current);
       }
-      itemRefs.forEach(itemRef => {
+      itemRefs.forEach((itemRef) => {
         if (itemRef.current) {
           observer.unobserve(itemRef.current);
         }
@@ -67,8 +71,7 @@ export function Benefits() {
           })}
         >
           Why Choose the
-          <span>Memphis Appliance Services</span>
-          ?
+          <span>Memphis Appliance Services</span>?
         </h3>
         <div className="container container--pi-10">
           <div className="benefits">
@@ -82,15 +85,12 @@ export function Benefits() {
                     'benefits__item animate animate--scale': true,
                   })}
                 >
-                  <p className="benefits__content">
-                    {benefit}
-                  </p>
+                  <p className="benefits__content">{benefit}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   );

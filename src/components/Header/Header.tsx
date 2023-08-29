@@ -38,7 +38,9 @@ export function Header({ isHomePage }: { isHomePage: boolean }) {
                   Professional & Highly Rated Appliance
                 </p>
 
-                <p className="header__title">Repair Your Family Can Count On!</p>
+                <p className="header__title">
+                  Repair Your Family Can Count On!
+                </p>
               </>
             ) : (
               <p className="header__title">{lastObjNav?.title}</p>
@@ -47,10 +49,7 @@ export function Header({ isHomePage }: { isHomePage: boolean }) {
         </div>
 
         {isHomePage ? (
-          <NavLink
-            to="/contact"
-            className="button button--book button--shake"
-          >
+          <NavLink to="/contact" className="button button--book button--shake">
             Contact us
           </NavLink>
         ) : (

@@ -35,7 +35,7 @@ export function NavHeader({ setIsActiveMenuMobile }: Props) {
     <div className="navBar navBar--header navBar--header-scale">
       <div
         className={classNames({
-          'navBar__block': true,
+          navBar__block: true,
           'navBar__block--large': isBigHeaderLine,
         })}
       >
@@ -44,7 +44,6 @@ export function NavHeader({ setIsActiveMenuMobile }: Props) {
             <div className="navBar__logo">
               <Logo isBig={isBigHeaderLine} />
             </div>
-            
 
             <NavList isMobile={false} />
 

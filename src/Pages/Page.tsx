@@ -11,11 +11,7 @@ type Props = {
   isBlockAdvantages?: boolean;
 };
 
-function Page({
-  children,
-  isHomePage,
-  isBlockAdvantages
-}: Props) {
+function Page({ children, isHomePage, isBlockAdvantages }: Props) {
   useEffect(() => {
     window.scrollTo({
       top: 0,

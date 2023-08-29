@@ -36,7 +36,14 @@
   font-size: $size;
 }
 
-@mixin pos($position, $top: none, $right: none, $bottom: none, $left: none, $index: none) {
+@mixin pos(
+  $position,
+  $top: none,
+  $right: none,
+  $bottom: none,
+  $left: none,
+  $index: none
+) {
   position: $position;
   top: $top;
   right: $right;

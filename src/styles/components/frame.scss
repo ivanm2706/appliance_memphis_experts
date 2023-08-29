@@ -7,8 +7,7 @@ $borderRadiusBlock: 12px;
   left: 5px;
   bottom: 5px;
   border-radius: $borderRadiusBlock;
-};
-
+}
 
 .frame {
   position: relative;
@@ -28,7 +27,6 @@ $borderRadiusBlock: 12px;
         border: 2px solid #bad8eb;
       }
     }
-
   }
 
   &--light {

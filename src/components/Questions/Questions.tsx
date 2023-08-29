@@ -8,7 +8,7 @@ export function Questions() {
   const pRefQ = useRef<HTMLParagraphElement | null>(null);
   const h3RefQ = useRef<HTMLHeadingElement | null>(null);
 
-  const fakeRef = useRef<HTMLDivElement | null>(null); 
+  const fakeRef = useRef<HTMLDivElement | null>(null);
 
   const observerOptions: IntersectionObserverInit = {
     root: null,
@@ -17,7 +17,7 @@ export function Questions() {
   };
 
   const handleIntersection: IntersectionObserverCallback = (entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (aRefQ.current) {
           aRefQ.current.classList.add('animate--up-active');
@@ -34,7 +34,6 @@ export function Questions() {
         if (h3RefQ.current) {
           h3RefQ.current.classList.add('animate--move-active');
         }
-        
       } else {
         if (aRefQ.current) {
           aRefQ.current.classList.remove('animate--up-active');
@@ -57,7 +56,10 @@ export function Questions() {
 
   useEffect(() => {
     // Используем общую логику для наблюдения за видимостью
-    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions,
+    );
 
     if (fakeRef.current) {
       observer.observe(fakeRef.current);
@@ -71,16 +73,15 @@ export function Questions() {
   }, []);
 
   return (
-    <section
-      className="background background--light"
-    >
+    <section className="background background--light">
       <div className="container container--page">
         <div className="questions">
           <div className="questions__block">
             <h3
               ref={h3RefQ}
               className={classNames({
-                'questions__title animate animate--move animate--move-active': true,
+                'questions__title animate animate--move animate--move-active':
+                  true,
               })}
             >
               Need to discuss your appliance?

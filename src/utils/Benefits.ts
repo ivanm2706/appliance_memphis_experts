@@ -5,10 +5,3 @@ export const benefits = [
   'Genuine Spare Components: Employing only certified materials and parts during repairs, we uphold the integrity of your equipment. Our rigorous component quality control guarantees lasting performance.',
   'Care that Counts: Our clients enjoy considerate discounts tailored to their needs. Volume-driven savings and thoughtful reductions address every facet of our clientele`s requirements.',
 ];
-
-
-
-
-
-
-

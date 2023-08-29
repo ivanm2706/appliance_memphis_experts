@@ -1,6 +1,5 @@
 .form {
   &--fastContact {
-    
   }
 
   &__title {
@@ -24,8 +23,8 @@
     color: $WhiteColor;
     @include text(16px, 400);
 
-    &[type=number]::-webkit-inner-spin-button,
-    &[type=number]::-webkit-outer-spin-button {
+    &[type='number']::-webkit-inner-spin-button,
+    &[type='number']::-webkit-outer-spin-button {
       -webkit-appearance: none;
       margin: 0;
     }

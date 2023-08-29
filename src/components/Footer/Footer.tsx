@@ -38,7 +38,7 @@ export function Footer() {
 
     sendEmail(data)
       .then(resetForm)
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   };
 
   return (

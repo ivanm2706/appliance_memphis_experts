@@ -25,10 +25,7 @@ export const App = () => {
         <Route
           path="/"
           element={
-            <Page
-              isHomePage
-              isBlockAdvantages
-            >
+            <Page isHomePage isBlockAdvantages>
               <HomePage />
             </Page>
           }
@@ -53,7 +50,14 @@ export const App = () => {
           }
         />
 
-        <Route path="/company" element={<Page isBlockAdvantages><CompanyPage /></Page>} />
+        <Route
+          path="/company"
+          element={
+            <Page isBlockAdvantages>
+              <CompanyPage />
+            </Page>
+          }
+        />
 
         <Route path="/contact" element={<Page>{/* <ContactPage /> */}</Page>} />
       </Routes>

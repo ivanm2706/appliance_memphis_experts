@@ -4,7 +4,7 @@ import React, { ReactNode, useEffect, useRef } from 'react';
 type Props = {
   p: string[];
   children: ReactNode;
-  contact?: ReactNode
+  contact?: ReactNode;
   title?: string;
   titleSpan?: string;
   titleAfterSpan?: string;
@@ -46,15 +46,16 @@ export function ImageTextModule({
     };
   }, []);
 
-
   return (
     <div className="imageTextModule">
       <div ref={div2Ref} className="imageTextModule__img">
-        <span className={classNames({
-          'imageTextModule__wrapper': true,
-          'imageTextModule__wrapper--frame': !withoutFrames,
-        })}>
-          { children }
+        <span
+          className={classNames({
+            imageTextModule__wrapper: true,
+            'imageTextModule__wrapper--frame': !withoutFrames,
+          })}
+        >
+          {children}
         </span>
       </div>
       <div ref={div1Ref} className="imageTextModule__content">
@@ -65,10 +66,9 @@ export function ImageTextModule({
             {titleAfterSpan}
           </h3>
         )}
-        
 
         <div className="imageTextModule__subtitles">
-          {p.map(text => {
+          {p.map((text) => {
             const phrase = 'Memphis Appliance Services';
             const parts = text.split(phrase);
 
@@ -76,20 +76,16 @@ export function ImageTextModule({
               <p className="imageTextModule__subtitle" key={text}>
                 {parts.map((partText, index) => (
                   <i key={partText}>
-                    {index > 0 && <strong>{phrase}</strong>} 
+                    {index > 0 && <strong>{phrase}</strong>}
                     {partText}
                   </i>
-                ))}            
+                ))}
               </p>
             );
           })}
         </div>
 
-        {contact && (
-          <div className="container container--mt-20">
-            {contact}
-          </div>
-        )}
+        {contact && <div className="container container--mt-20">{contact}</div>}
       </div>
     </div>
   );
