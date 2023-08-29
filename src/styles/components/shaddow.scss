@@ -1,25 +1,20 @@
 .shaddow {
-  position: absolute;
-
   &--open {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @include pos(absolute, 0, 0, 0, 0, 40);
     background-color: $shadowColor;
-    z-index: 40;
+  }
+
+  &--header {
+    @include pos(absolute, 0, 0, 0, 0, 10);
+    background-color: #0000006b;
   }
 
   &--mobile-navigation {
-    position: fixed;
-    z-index: 61;
+    @include pos(none, 0, 0, 0, 0, 61);
   }
 
   &--open-mobile-navigation {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: fixed;
     background-color: #18172a87;
   }
 }

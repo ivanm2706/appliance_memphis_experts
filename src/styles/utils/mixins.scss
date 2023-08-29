@@ -35,3 +35,12 @@
   font-weight: $weight;
   font-size: $size;
 }
+
+@mixin pos($position, $top: none, $right: none, $bottom: none, $left: none, $index: none) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $index;
+}

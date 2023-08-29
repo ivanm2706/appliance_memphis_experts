@@ -3,11 +3,12 @@
   z-index: 52;
 }
 
+$servicesImage: 'freezer', 'oven', 'dishwasher', 'dryer', 'washing', 'garbage';
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 10px;
 
   @include onMiniTablet {
     grid-template-columns: 1fr 1fr;
@@ -15,10 +16,6 @@
 
   @include onTablet {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @include onDesktop {
-    padding: 0;
   }
 
   &__card {
@@ -56,9 +53,9 @@
       z-index: 53;
     }
 
-    @for $i from 1 through 6 {
-      &--#{$i} {
-        background-image: url(../../images/services/#{$i}.jpg);
+    @each $namePicture in $servicesImage {
+      &--#{$namePicture} {
+        background-image: url(../../images/services/#{$namePicture}.jpg);
       }
     }
   }

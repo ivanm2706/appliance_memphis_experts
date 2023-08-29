@@ -1,23 +1,26 @@
 .page {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #0d234d;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #3990bc7a;
+  }
+
   &__home {
     font-family: 'Andada Pro', serif;
     color: $textColor;
-
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: black;
-      border-radius: 10px;
-    }
   }
 
   &__title {
     @include text(24px, 700);
     text-transform: uppercase;
     text-align: center;
-    padding: 10px;
     margin-bottom: 20px;
     position: relative;
 
@@ -39,6 +42,14 @@
     }
   }
 
+  &__titleH3 {
+    display: block;
+    text-align: center;
+    @include text(30px, 800);
+    color: $main;
+    margin-bottom: 20px;
+  }
+
   &__subtitle {
     padding-inline: 10px;
     margin-bottom: 20px;
@@ -50,39 +61,8 @@
     }
   }
 
-  &__section {
-    padding-block: 30px;
-    position: relative;
 
-    @include onTablet {
-      padding-block: 50px;
-    }
-
-    &--no-padding {
-      padding-block: 0;
-    }
-
-    &--gray {
-      background-image: linear-gradient(
-          90deg,
-          rgba(7, 174, 252, 0.08) 0%,
-          rgba(7, 174, 252, 0.3) 100%
-        ),
-        url(../../images/on-gradient-bg.png);
-    }
-
-    &--benefits {
-      @include bg-i('../../images/benefits.jpg');
-      padding-block: 80px;
-    }
-  }
-
-  &__footer {
-    background-color: $first;
-    background-image: url(../../images/texture-on-dark.png);
-    padding-block: 30px;
-  }
-
+  // remove
   &__lineBlock {
     padding-inline: 10px;
 

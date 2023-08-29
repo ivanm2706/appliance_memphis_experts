@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  position: relative;
+
+  &__fake {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    bottom: 0;
+    right: 50%;
+  }
 
   @include onTablet {
     grid-template-columns: 1fr 1fr;

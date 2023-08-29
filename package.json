@@ -34,7 +34,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "fix-style": "npm run format && npm run lint -- --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -2,7 +2,7 @@
   &__list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 30px;
     align-items: center;
     justify-items: center;
 
@@ -41,7 +41,7 @@
   }
 
   &__description {
-    max-width: 500px;
+    max-width: 390px;
     @include text(14px, 400);
   }
 }

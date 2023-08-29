@@ -4,6 +4,7 @@
   border-width: 0;
   @include text(16px);
   text-transform: uppercase;
+  position: relative;
 
   &--position {
     position: relative;
@@ -104,13 +105,17 @@
     background-color: $buttonColor;
     color: $WhiteColor;
     padding: 7px 40px;
-    border-radius: 5px;
+    border-radius: 28px;
     transition: all 300ms;
 
     &:hover {
-      scale: 1.1;
-      background-color: $hoverLight;
-      color: $hoverColor;
+      scale: 1.05;
+      background-color: $first;
+    }
+
+    &::before {
+      content: '';
+      @extend %frame;
     }
   }
 
@@ -138,7 +143,7 @@
   }
 
   &--shake {
-    animation: book ease-in 2s;
+    animation: shake ease-in 2s;
   }
 
   &--card {
@@ -165,7 +170,7 @@
     }
   }
 
-  @keyframes book {
+  @keyframes shake {
     0%,
     100% {
       transform: scale3d(1, 1, 1);

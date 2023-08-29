@@ -1,6 +1,11 @@
 .logo {
   border-radius: 40px;
   overflow: hidden;
+  transition: transform 300ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   &--nav {
     position: absolute;
@@ -21,14 +26,6 @@
     &--big {
       @include onSmallDesktop {
         height: 90px;
-      }
-    }
-
-    &:hover {
-      height: 90px;
-
-      @include onSmallDesktop {
-        height: 110px;
       }
     }
   }

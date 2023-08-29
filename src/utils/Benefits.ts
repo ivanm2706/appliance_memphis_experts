@@ -1,7 +1,14 @@
 /* eslint-disable max-len */
 export const benefits = [
-  'Quality is the main criterion of our work. It is this parameter that is embedded in the system of motivation of our employees.',
-  'All our masters conduct a thorough selection and pass a mandatory qualifying exam. Must have at least 3 years of experience.',
-  'Original spare parts. When using repairs, only certified materials and parts are used. We strictly monitor the quality of all components.',
-  'Patient discounts on all side effects. Discounts depending on the volume of ordered services and discounts if necessary.',
+  'Uncompromising Excellence: Quality stands as our cornerstone. Woven into our employee incentive structure, it`s the driving force that underpins our commitment to delivering top-tier results.',
+  'Expertise at its Core: Every artisan undergoes rigorous selection and a mandatory qualifying assessment. A minimum of 3 years hands-on experience is prerequisite, ensuring seasoned proficiency.',
+  'Genuine Spare Components: Employing only certified materials and parts during repairs, we uphold the integrity of your equipment. Our rigorous component quality control guarantees lasting performance.',
+  'Care that Counts: Our clients enjoy considerate discounts tailored to their needs. Volume-driven savings and thoughtful reductions address every facet of our clientele`s requirements.',
 ];
+
+
+
+
+
+
+

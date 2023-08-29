@@ -1,4 +1,4 @@
-.learn-more {
+.callUs {
   line-height: 28px;
   text-align: center;
   position: relative;
@@ -39,8 +39,9 @@
   }
 
   &--white {
-    & .learn-more__tel,
-    & .learn-more__contact {
+    & .callUs__tel,
+    & .callUs__contact,
+    & p {
       color: $WhiteColor;
     }
   }

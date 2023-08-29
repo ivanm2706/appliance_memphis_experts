@@ -32,35 +32,35 @@ export function NavHeader({ setIsActiveMenuMobile }: Props) {
   }, []);
 
   return (
-    <div className="nav-header">
+    <div className="navBar navBar--header navBar--header-scale">
       <div
         className={classNames({
-          'nav-header__nav': true,
-          'nav-header__nav--large': isBigHeaderLine,
+          'navBar__block': true,
+          'navBar__block--large': isBigHeaderLine,
         })}
       >
-        <div className="container">
-          <div className="nav-header__nav-content">
-            <span className="nav-header__logo-wrap" />
-            <div className="nav-header__logo">
+        <div className="container container--page container--pi-10">
+          <div className="navBar__content">
+            <div className="navBar__logo">
               <Logo isBig={isBigHeaderLine} />
             </div>
+            
 
             <NavList isMobile={false} />
 
-            <div className="nav-header__contacts-menu">
+            <div className="navBar__contacts-menu">
               <Tel classes="miniContact miniContact--phone" />
 
-              <div className="mobileBar">
+              <div className="navBar__openMenu">
                 <button
                   type="button"
-                  className="button"
+                  className="navBar__openMenuButton"
                   onClick={() => setIsActiveMenuMobile(true)}
                 >
-                  <div className="mobileBar__button">
-                    <span className="mobileBar__line" />
-                    <span className="mobileBar__line" />
-                    <span className="mobileBar__line" />
+                  <div className="navBar__openMenuBlockLines">
+                    <span className="navBar__openMenuLine" />
+                    <span className="navBar__openMenuLine" />
+                    <span className="navBar__openMenuLine" />
                   </div>
                 </button>
               </div>

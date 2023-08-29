@@ -38,12 +38,11 @@ export function NavMobile({ isActive, setIsActive }: Props) {
     >
       <nav
         className={classNames({
-          'nav nav--mobile': true,
-          'nav--mobileOpen': isActive,
+          'navBar navBar--mobile': true,
+          'navBar--mobile-open': isActive,
         })}
       >
-        <div className="nav__shadow" />
-        <div className="nav__headerButton">
+        <div className="navBar__closeMobileMenuWrapper">
           <button
             type="button"
             className="button button--menuClose"
@@ -53,16 +52,18 @@ export function NavMobile({ isActive, setIsActive }: Props) {
 
         <NavList isMobile />
 
-        <div className="contacts contacts--mobile">
-          <ul className="contacts__contacts-list">
-            <li className="contacts__contacts-item">
-              <Tel classes="miniContact miniContact--phone" />
-            </li>
+        <div className="navBar__contacts">
+          <div className="container container--pi-10">
+            <ul className="navBar__contacts-list">
+              <li>
+                <Tel classes="miniContact miniContact--phone" />
+              </li>
 
-            <li className="contacts__contacts-item">
-              <Email classes="miniContact miniContact--mail" />
-            </li>
-          </ul>
+              <li>
+                <Email classes="miniContact miniContact--mail" />
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>

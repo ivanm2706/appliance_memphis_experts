@@ -1,16 +1,21 @@
 import React, { useEffect, ReactNode } from 'react';
+import { Benefits } from '../components/Benefits';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
-// import Benefits from '../components/Benefits/Benefits';
-// import Questions from '../components/Questions/Questions';
-// import Steps from '../components/Steps/Steps';
+import { Questions } from '../components/Questions';
+import { Steps } from '../components/Steps';
 
 type Props = {
   children: ReactNode;
   isHomePage?: boolean;
+  isBlockAdvantages?: boolean;
 };
 
-function Page({ children, isHomePage }: Props) {
+function Page({
+  children,
+  isHomePage,
+  isBlockAdvantages
+}: Props) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -22,14 +27,18 @@ function Page({ children, isHomePage }: Props) {
     <>
       <Header isHomePage={isHomePage || false} />
 
-      <main className="page__main">
+      <main className="background background--bland">
         {children}
 
-        {/* <Benefits />
+        {isBlockAdvantages && (
+          <>
+            <Benefits />
 
-        <Steps />
+            <Steps />
 
-        <Questions /> */}
+            <Questions />
+          </>
+        )}
       </main>
 
       <Footer />

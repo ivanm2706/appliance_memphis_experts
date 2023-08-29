@@ -27,29 +27,31 @@ export function Header({ isHomePage }: { isHomePage: boolean }) {
         'header--homePage': isHomePage,
       })}
     >
-      <div className="header__background-shadow" />
+      <div className="shaddow shaddow--header" />
 
       <div className="header__content">
-        <div className="header__titles">
-          {isHomePage ? (
-            <>
-              <p className="header__title">
-                Professional & Highly Rated Appliance
-              </p>
+        <div className="container container--pi-10">
+          <div className="header__titles">
+            {isHomePage ? (
+              <>
+                <p className="header__title">
+                  Professional & Highly Rated Appliance
+                </p>
 
-              <p className="header__title">Repair Your Family Can Count On!</p>
-            </>
-          ) : (
-            <p className="header__title">{lastObjNav?.title}</p>
-          )}
+                <p className="header__title">Repair Your Family Can Count On!</p>
+              </>
+            ) : (
+              <p className="header__title">{lastObjNav?.title}</p>
+            )}
+          </div>
         </div>
 
         {isHomePage ? (
           <NavLink
-            to="/contact#book"
+            to="/contact"
             className="button button--book button--shake"
           >
-            Book online
+            Contact us
           </NavLink>
         ) : (
           <History service={service} lastObjNav={lastObjNav} />
