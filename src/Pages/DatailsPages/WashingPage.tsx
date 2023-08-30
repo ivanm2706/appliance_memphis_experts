@@ -12,7 +12,7 @@ const washingMashine = {
   nameImg: 'laundry-room-1.jpg',
   contents: [
     'With all that your washing machine does for you, it is no wonder it breaks down from time to time. Maintenance of your home’s appliances is a must for busy families and fast-paced households. That’s where our appliance repair technicians will come to your rescue: Memphis Appliance Services will keep your washer removing stains, dirt, and odor from your clothing.',
-    'Household laundry rooms today serve as more than just a room to put those two appliances, the washing machine and the dryer, and perhaps the ironing board too. In many homes, they are the garage entry, the sports equipment center, the mudroom, and the overall command center for your family.'
+    'Household laundry rooms today serve as more than just a room to put those two appliances, the washing machine and the dryer, and perhaps the ironing board too. In many homes, they are the garage entry, the sports equipment center, the mudroom, and the overall command center for your family.',
   ],
   commonRepairs: {
     description:
@@ -74,7 +74,7 @@ function WashingPage() {
           <div className="container container--mb-35">
             <ImageTextModule
               p={washingMashine.contents}
-              contact={(
+              contact={
                 <div className="container container--center">
                   <NavLink
                     to="/contact"
@@ -83,7 +83,7 @@ function WashingPage() {
                     contact us
                   </NavLink>
                 </div>
-              )}
+              }
             >
               <span className="imageTextModule__frame" style={imageStyle} />
             </ImageTextModule>
@@ -115,7 +115,11 @@ function WashingPage() {
 
             <div className="container container--center">
               <p className="page__subtitle">
-                You know the sound; it is a loud booming coming from the laundry room that sounds as if the walls are crashing in around you. Your washer is off balance. But did you know that each time the washer experiences any issue, it damages the unit? Here are a few of the more common repairs we see in the field each day.
+                You know the sound; it is a loud booming coming from the laundry
+                room that sounds as if the walls are crashing in around you.
+                Your washer is off balance. But did you know that each time the
+                washer experiences any issue, it damages the unit? Here are a
+                few of the more common repairs we see in the field each day.
               </p>
             </div>
 
@@ -144,29 +148,51 @@ function WashingPage() {
             <div className="container container--mb-15">
               <ol start={3} className="list--ordered">
                 <li>
-                  <strong>The washing machine is overfilling with water. </strong>
-                  &nbsp;
-                  Flooding in the laundry room is no joke. First, turn off the water to the unit, then call for appliance repair. There are several components we can check for you. It may be the pressure switch, the water inlet valve, the mainboard, and more, causing the overfill.
+                  <strong>
+                    The washing machine is overfilling with water.{' '}
+                  </strong>
+                  &nbsp; Flooding in the laundry room is no joke. First, turn
+                  off the water to the unit, then call for appliance repair.
+                  There are several components we can check for you. It may be
+                  the pressure switch, the water inlet valve, the mainboard, and
+                  more, causing the overfill.
                 </li>
                 <li>
-                  <strong>There is water leaking from my washing machine.</strong>
-                  &nbsp;
-                  This is one of those problems that can creep up on you and ruin your flooring and more. Front-load washers can dump a lot of water on the floor if they have a problem with the gasket or door locking mechanism. A leaking water supply hose can cause many issues, and clogged drain lines may even be worse. Call a professional for a complete diagnosis right away.
+                  <strong>
+                    There is water leaking from my washing machine.
+                  </strong>
+                  &nbsp; This is one of those problems that can creep up on you
+                  and ruin your flooring and more. Front-load washers can dump a
+                  lot of water on the floor if they have a problem with the
+                  gasket or door locking mechanism. A leaking water supply hose
+                  can cause many issues, and clogged drain lines may even be
+                  worse. Call a professional for a complete diagnosis right
+                  away.
                 </li>
                 <li>
                   <strong>Why won’t my washer drain?</strong>
-                  &nbsp;
-                  If the washing machine has a problem with the spin cycle, it will not wash or drain. You may have an issue with the door, locks, motor, belts, transmission, clutch, glides, pulley, or drum roller. With that many parts to consider, call for expert diagnosis and repair.
+                  &nbsp; If the washing machine has a problem with the spin
+                  cycle, it will not wash or drain. You may have an issue with
+                  the door, locks, motor, belts, transmission, clutch, glides,
+                  pulley, or drum roller. With that many parts to consider, call
+                  for expert diagnosis and repair.
                 </li>
                 <li>
                   <strong>Suds are pouring out of my washer.</strong>
-                  &nbsp;
-                  Over-sudsing can cause a variety of problems, from the classic image of a mountain of froth running out of your washer to leftover suds that stick to your clothes and the inside of the washing machine’s drum after a cycle. Try reducing the detergent you use, and have the drain and pump checked by a professional.
+                  &nbsp; Over-sudsing can cause a variety of problems, from the
+                  classic image of a mountain of froth running out of your
+                  washer to leftover suds that stick to your clothes and the
+                  inside of the washing machine’s drum after a cycle. Try
+                  reducing the detergent you use, and have the drain and pump
+                  checked by a professional.
                 </li>
                 <li>
                   <strong>What is wrong? It won’t turn on at all.</strong>
-                  &nbsp;
-                  Of course, the first thing to check is that the plug has not come loose from the outlet. After that, there could be several other reasons your washing machine won’t turn on. It could be a problem with the electric or motor board, which are simple replacements.
+                  &nbsp; Of course, the first thing to check is that the plug
+                  has not come loose from the outlet. After that, there could be
+                  several other reasons your washing machine won’t turn on. It
+                  could be a problem with the electric or motor board, which are
+                  simple replacements.
                 </li>
               </ol>
             </div>
@@ -206,8 +232,7 @@ function WashingPage() {
               className="imageTextModule__frame"
               style={{
                 ...imageStyle,
-                backgroundImage:
-                  'url("./images/washing-machine-repair.jpg")',
+                backgroundImage: 'url("./images/washing-machine-repair.jpg")',
               }}
             />
           </ImageTextModule>
@@ -220,7 +245,8 @@ function WashingPage() {
             <div className="container container--maxW-800 container--center">
               <div className="callUs callUs--white">
                 <p>
-                  To learn more about the appliance repair and installation we provide around Memphis, TN, don’t hesitate to call us at
+                  To learn more about the appliance repair and installation we
+                  provide around Memphis, TN, don’t hesitate to call us at
                 </p>
                 <Tel classes="callUs__tel" />
                 <p>or use our</p>

@@ -57,23 +57,28 @@ function ServicesPage() {
             <h3 className="page__titleH3">Common Appliance Repairs</h3>
 
             <p className="page__subtitle">
-              Today’s appliances are highly efficient and will last for several years if they’re maintained well, but they’re not immune to damage. These devices can stop working without notice regardless of how well-maintained they are. That is why you need prompt appliance repair if you experience any of these problems:
+              Today’s appliances are highly efficient and will last for several
+              years if they’re maintained well, but they’re not immune to
+              damage. These devices can stop working without notice regardless
+              of how well-maintained they are. That is why you need prompt
+              appliance repair if you experience any of these problems:
             </p>
 
             <div className="container container--mb-15">
               <ol className="list--ordered">
                 <li>
-                  The device isn’t switching on even when it is connected to an electrical supply.
+                  The device isn’t switching on even when it is connected to an
+                  electrical supply.
                 </li>
                 <li>
-                  It isn’t performing according to expectations. For example, the fridge doesn’t cool as efficiently as it used to.
+                  It isn’t performing according to expectations. For example,
+                  the fridge doesn’t cool as efficiently as it used to.
                 </li>
                 <li>
-                  The appliance is making strange noises or emitting a foul odor.
+                  The appliance is making strange noises or emitting a foul
+                  odor.
                 </li>
-                <li>
-                  Your machine is old and develops problems frequently.
-                </li>
+                <li>Your machine is old and develops problems frequently.</li>
               </ol>
             </div>
 
@@ -100,9 +105,11 @@ function ServicesPage() {
             <p className="page__subtitle">
               Furthermore,&nbsp;
               <strong>Memphis Appliance Services</strong>
-              &nbsp;can install the new one, so it is done right the first time.&nbsp;
+              &nbsp;can install the new one, so it is done right the first
+              time.&nbsp;
               <strong>Memphis Appliance Services</strong>
-              &nbsp;exceeds expectations and ensures complete satisfaction for your appliance services in Memphis. 
+              &nbsp;exceeds expectations and ensures complete satisfaction for
+              your appliance services in Memphis.
             </p>
 
             <div className="container container--center">
@@ -147,7 +154,8 @@ function ServicesPage() {
             <div className="container container--maxW-800 container--center">
               <div className="callUs callUs--white">
                 <p>
-                  To learn more about the appliance repair and installation we provide around Memphis, TN, don’t hesitate to call us at
+                  To learn more about the appliance repair and installation we
+                  provide around Memphis, TN, don’t hesitate to call us at
                 </p>
                 <Tel classes="callUs__tel" />
                 <p>or use our</p>

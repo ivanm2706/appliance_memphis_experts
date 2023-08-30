@@ -81,7 +81,8 @@ export function DryerPage() {
 
             <div className="container container--center">
               <p className="page__subtitle">
-                To determine whether you need a dryer repair expert, here are a few of the more obvious signs you may notice.
+                To determine whether you need a dryer repair expert, here are a
+                few of the more obvious signs you may notice.
               </p>
             </div>
 
@@ -259,8 +260,8 @@ export function DryerPage() {
               <div className="callUs callUs--white">
                 <p>
                   To learn more about the dryer repair and installation we
-                  provide in Memphis, TN, don’t
-                  hesitate to call our staff at&nbsp;
+                  provide in Memphis, TN, don’t hesitate to call our staff
+                  at&nbsp;
                   <strong>Memphis Appliance Services</strong>
                   &nbsp;at
                 </p>

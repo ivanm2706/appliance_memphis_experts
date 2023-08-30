@@ -37,7 +37,7 @@ export function Footer() {
     };
 
     sendEmail(data)
-      .then(res => {
+      .then((res) => {
         console.log(res);
         resetForm();
       })

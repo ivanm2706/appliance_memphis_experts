@@ -5,8 +5,21 @@ import { ImageTextModule } from '../../components/ImageTextModule';
 import { PicturesBlock } from '../../components/PicturesBlock';
 import Tel from '../../components/Tel/Tel';
 
-const partsRepair = ['Gas Range Repair', 'Electric Range Repair', 'Wood Stove Repair', 'Glass Top Stove Repair', 'And more!'];
-const ourTeamQualifications = ['Expert Service & Quality Repairs', 'Always Prepared', '15+ years of appliance repair experience', 'Attention to detail is evident in all our work', 'Same-day service is available', 'Quick turnaround & personal service.'];
+const partsRepair = [
+  'Gas Range Repair',
+  'Electric Range Repair',
+  'Wood Stove Repair',
+  'Glass Top Stove Repair',
+  'And more!',
+];
+const ourTeamQualifications = [
+  'Expert Service & Quality Repairs',
+  'Always Prepared',
+  '15+ years of appliance repair experience',
+  'Attention to detail is evident in all our work',
+  'Same-day service is available',
+  'Quick turnaround & personal service.',
+];
 
 const oven = {
   id: 5,
@@ -43,13 +56,13 @@ function OvenPage() {
           <div className="container container--mb-35">
             <ImageTextModule
               p={oven.contents}
-              contact={(
+              contact={
                 <div className="callUs">
                   <NavLink to="/contact" className="callUs__contact" replace>
                     Contact us today to get it repaired before dinner.
                   </NavLink>
                 </div>
-              )}
+              }
             >
               <span className="imageTextModule__frame" style={imageStyle} />
             </ImageTextModule>
@@ -79,13 +92,17 @@ function OvenPage() {
 
             <div className="callUs">
               <p>
-                To learn more about the appliance repair and installation we provide in Memphis, TN, please don’t hesitate to call us at
+                To learn more about the appliance repair and installation we
+                provide in Memphis, TN, please don’t hesitate to call us at
               </p>
               <p>or use our</p>
               <NavLink to="/contact" className="callUs__contact" replace>
                 contact form
               </NavLink>
-              <p>to reach us. You can easily book and schedule your repair right away.</p>
+              <p>
+                to reach us. You can easily book and schedule your repair right
+                away.
+              </p>
             </div>
           </Frame>
         </div>
@@ -98,13 +115,17 @@ function OvenPage() {
           </h3>
 
           <p className="page__subtitle">
-            With more than 15+ years of in-the-field experience, our professional repair technicians can handle any oven and stove repair. Here are some of the units we fix for the clients of Memphis each week.
+            With more than 15+ years of in-the-field experience, our
+            professional repair technicians can handle any oven and stove
+            repair. Here are some of the units we fix for the clients of Memphis
+            each week.
           </p>
 
           <div className="container container--mb-15">
             <div className="list">
               <p className="list__title">
-                Our team promises the following standards of service for all our Memphis clients:
+                Our team promises the following standards of service for all our
+                Memphis clients:
               </p>
               <ul className="list--block list--block-wrap">
                 {partsRepair.map((item) => (
@@ -117,7 +138,9 @@ function OvenPage() {
           </div>
 
           <p className="page__subtitle">
-            The Memphis Metro area can rest assured, whatever the issue you’re having with your oven or cooktop; we will be there right away to take care of it.
+            The Memphis Metro area can rest assured, whatever the issue you’re
+            having with your oven or cooktop; we will be there right away to
+            take care of it.
           </p>
         </div>
       </section>
@@ -138,20 +161,27 @@ function OvenPage() {
       <section>
         <div className="container container--page container--pi-10">
           <Frame mode="white">
-            <h3 className="page__titleH3">Oven and Stove Repair Common Issues</h3>
+            <h3 className="page__titleH3">
+              Oven and Stove Repair Common Issues
+            </h3>
 
             <div className="container container--center">
               <p className="page__subtitle">
-                Memphis Appliance Services sees appliance issues and failures every day. That is a lot of experience when you consider we have 15 years in the field. Here are a few of the problems we have taken note of over the years.
+                Memphis Appliance Services sees appliance issues and failures
+                every day. That is a lot of experience when you consider we have
+                15 years in the field. Here are a few of the problems we have
+                taken note of over the years.
               </p>
             </div>
 
             <ImageTextModule
               p={[
-                '– Traditional coil ranges can be tested to see if the hook-up is active by trading the unit with another from the stove. If it works, the problem is with the burner itself. In any case, we can trade the burner out or replace the switch receptacle. It is always better to let a professional handle electrical and appliance repair.', '– A bad switch can also cause the burner to stay at one constant temperature. No one wants to burn dinner with a control that stays on high.'
+                '– Traditional coil ranges can be tested to see if the hook-up is active by trading the unit with another from the stove. If it works, the problem is with the burner itself. In any case, we can trade the burner out or replace the switch receptacle. It is always better to let a professional handle electrical and appliance repair.',
+                '– A bad switch can also cause the burner to stay at one constant temperature. No one wants to burn dinner with a control that stays on high.',
               ]}
               strongStartTextForEveryP={[
-                'Burner Failure ', 'When the burner overheats'
+                'Burner Failure ',
+                'When the burner overheats',
               ]}
               orderNumberForList={[1, 2]}
               pStyleSecond
@@ -167,16 +197,19 @@ function OvenPage() {
                 }}
               />
             </ImageTextModule>
-                
 
             <ImageTextModule
               p={[
                 '– A false “hot-surface” indicator can be another indicator of a bad switch.',
-                '– Occasionally, the self-clean cycle will be triggered, and the lock will activate. In that case, there could be a malfunctioning lock, internal clock, or oven control. But we can fix that too.', '– This may mean the function selector or latch has broken.', '– There may be several different mechanical issues depending on the type of oven you have. You will most likely need to replace the bake or broil heating elements to get it going again. In our professional opinion, this requires our experience and a professional opinion.'
+                '– Occasionally, the self-clean cycle will be triggered, and the lock will activate. In that case, there could be a malfunctioning lock, internal clock, or oven control. But we can fix that too.',
+                '– This may mean the function selector or latch has broken.',
+                '– There may be several different mechanical issues depending on the type of oven you have. You will most likely need to replace the bake or broil heating elements to get it going again. In our professional opinion, this requires our experience and a professional opinion.',
               ]}
               strongStartTextForEveryP={[
                 'If the surface indicator is incorrect ',
-                'If the oven door won’t open ', 'When self-cleaning won’t clean', 'When the oven just won’t turn on or heats irregularly'
+                'If the oven door won’t open ',
+                'When self-cleaning won’t clean',
+                'When the oven just won’t turn on or heats irregularly',
               ]}
               orderNumberForList={[3, 4, 5, 6]}
               pStyleSecond
@@ -191,30 +224,44 @@ function OvenPage() {
               />
             </ImageTextModule>
 
-            <p className="page__subtitle">Furthermore, we have been doing this for a long time and stay up to date with all the modern amenities available in the new oven and stove technology being released. When you call on the professionals at Memphis Appliance Services, our techs will know exactly how to fix your range, no matter the brand name or age.</p>
+            <p className="page__subtitle">
+              Furthermore, we have been doing this for a long time and stay up
+              to date with all the modern amenities available in the new oven
+              and stove technology being released. When you call on the
+              professionals at Memphis Appliance Services, our techs will know
+              exactly how to fix your range, no matter the brand name or age.
+            </p>
 
-            <p className="page__subtitle">Memphis, don’t wait another minute. The kitchen is the home of the home, and the stove keeps it running after all. Let us help you by fixing it.</p>
+            <p className="page__subtitle">
+              Memphis, don’t wait another minute. The kitchen is the home of the
+              home, and the stove keeps it running after all. Let us help you by
+              fixing it.
+            </p>
           </Frame>
         </div>
       </section>
 
       <section>
         <div className="container container--pi-10 container--page container--pb-mainSection">
-          <h3 className="page__titleH3">
-            Repairing Ovens and Stoves for You
-          </h3>
+          <h3 className="page__titleH3">Repairing Ovens and Stoves for You</h3>
 
           <p className="page__subtitle">
-            We think you’d agree; there is never a good time for appliances to fail. That is why&nbsp;
+            We think you’d agree; there is never a good time for appliances to
+            fail. That is why&nbsp;
             <strong>Memphis Appliance Services</strong>
-            &nbsp;is always on the job. No appliance repair or installation is too big or too small for our experienced professionals.&nbsp;
+            &nbsp;is always on the job. No appliance repair or installation is
+            too big or too small for our experienced professionals.&nbsp;
             <strong>Memphis Appliance Services</strong>
-            &nbsp;is known for quality services, exceptional efficiency, and the highest level of professionalism.
+            &nbsp;is known for quality services, exceptional efficiency, and the
+            highest level of professionalism.
           </p>
 
           <div className="list">
             <p className="list__title">
-              <em>We promise the following standards of service for all our families:</em>
+              <em>
+                We promise the following standards of service for all our
+                families:
+              </em>
             </p>
             <ul className="list--block list--block-wrap">
               {ourTeamQualifications.map((item) => (
@@ -232,17 +279,16 @@ function OvenPage() {
           <Frame mode="dark">
             <div className="container container--center container--mb-15">
               <p className="page__text3">
-                We are ready for every job, managing projects with the skill and experience our clients have come to expect. Please get in touch to learn more about our team, company, or details about our services in Memphis, TN.
+                We are ready for every job, managing projects with the skill and
+                experience our clients have come to expect. Please get in touch
+                to learn more about our team, company, or details about our
+                services in Memphis, TN.
               </p>
             </div>
-            
-            <div className="container container--maxW-800 container--center">
 
-              
+            <div className="container container--maxW-800 container--center">
               <div className="callUs callUs--white">
-                <p>
-                  Call us at
-                </p>
+                <p>Call us at</p>
                 <Tel classes="callUs__tel" />
                 <p>or</p>
                 <NavLink to="/contact" className="callUs__contact" replace>

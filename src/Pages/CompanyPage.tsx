@@ -111,9 +111,8 @@ export function CompanyPage() {
           <Frame mode="dark">
             <div className="callUs callUs--white">
               <p>
-                If you want to learn more about our appliance repair in
-                Memphis, TN, please don’t hesitate
-                to call us at
+                If you want to learn more about our appliance repair in Memphis,
+                TN, please don’t hesitate to call us at
               </p>
               <Tel classes="callUs__tel" />
               <p>or use our</p>

@@ -219,7 +219,8 @@ function FreezerPage() {
 
           <div className="list">
             <p className="list__title">
-              Our team promises the following standards of service for all our Memphis clients:
+              Our team promises the following standards of service for all our
+              Memphis clients:
             </p>
             <ul className="list--block list--block-wrap">
               {ourTeamQualifications.map((item) => (
@@ -237,7 +238,10 @@ function FreezerPage() {
           <Frame mode="dark">
             <div className="container container--center container--mb-15">
               <p className="text page__text3">
-                We are ready for every job, managing projects with the skill and experience our clients have come to expect. Please get in touch to learn more about our team, company, or details about our services in Memphis, TN.
+                We are ready for every job, managing projects with the skill and
+                experience our clients have come to expect. Please get in touch
+                to learn more about our team, company, or details about our
+                services in Memphis, TN.
               </p>
             </div>
             <div className="container container--maxW-800 container--center">

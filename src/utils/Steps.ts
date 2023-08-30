@@ -6,14 +6,12 @@ export const steps = [
     step: 1,
   },
   {
-    title:
-      'Equipment Diagnosis: Swift identification of faulty component.',
+    title: 'Equipment Diagnosis: Swift identification of faulty component.',
     id: 2,
     step: 2,
   },
   {
-    title:
-      'Direct Restoration: Part replacement, tuning, adjustments.',
+    title: 'Direct Restoration: Part replacement, tuning, adjustments.',
     id: 3,
     step: 3,
   },

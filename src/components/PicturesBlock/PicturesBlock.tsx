@@ -22,11 +22,7 @@ export function PicturesBlock({ imageNames, text }: Props) {
         ))}
       </div>
 
-      {text && (
-        <p className="puctures-block__text">
-          {text}
-        </p>
-      )}
+      {text && <p className="puctures-block__text">{text}</p>}
     </>
   );
 }

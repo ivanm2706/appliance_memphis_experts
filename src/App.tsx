@@ -34,10 +34,7 @@ export const App = () => {
           }
         />
 
-        <Route
-          path="/services"
-          element={<Page>{<ServicesPage />}</Page>}
-        />
+        <Route path="/services" element={<Page>{<ServicesPage />}</Page>} />
 
         <Route
           path="/services/:service"
