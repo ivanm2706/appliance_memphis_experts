@@ -15,7 +15,7 @@ const imageStyle = {
 };
 
 const textAboutCompany = [
-  'At Memphis Appliance Services, we base our entire business on integrity and quality. You see, since the beginning of our work careers, our family has been in the tinkering industries in one way or another. We like a good challenge, and figuring out the puzzle of these appliances is a great way to help improve the lives of the folks of Loganville, GA and the surrounding areas. After all, we live, work, and play here in the community. We want to make you proud.',
+  'At Memphis Appliance Services, we base our entire business on integrity and quality. You see, since the beginning of our work careers, our family has been in the tinkering industries in one way or another. We like a good challenge, and figuring out the puzzle of these appliances is a great way to help improve the lives of the folks of Memphis, TN. After all, we live, work, and play here in the community. We want to make you proud.',
   'In our experience, we have learned the value of not only a good home but an appliance that works well for you. Proper maintenance and repair are an essential part of making your home run smoothly.',
 ];
 
@@ -112,7 +112,7 @@ export function CompanyPage() {
             <div className="callUs callUs--white">
               <p>
                 If you want to learn more about our appliance repair in
-                Loganville, GA and the surrounding areas, please don’t hesitate
+                Memphis, TN, please don’t hesitate
                 to call us at
               </p>
               <Tel classes="callUs__tel" />

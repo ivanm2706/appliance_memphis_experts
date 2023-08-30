@@ -12,16 +12,12 @@ export function Steps() {
   const observerOptions: IntersectionObserverInit = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5, // Порог для определения видимости элемента
+    threshold: 1, // Порог для определения видимости элемента
   };
 
   const handleIntersection: IntersectionObserverCallback = (entries) => {
     entries.forEach((entry) => {
-      let classAnimated = 'animate--opacity-active';
-
-      if (entry.target.localName === 'div') {
-        classAnimated = 'animate--up-active';
-      }
+      const classAnimated = 'animate--opacity-active';
 
       if (entry.isIntersecting) {
         entry.target.classList.add(classAnimated);
@@ -78,8 +74,7 @@ export function Steps() {
             {steps.map(({ step, title, id }, index) => (
               <div
                 className={classNames({
-                  'steps__item animate animate--up': true,
-                  // 'animate--up-active': isAnimateDiv,
+                  'steps__item animate animate--opacity': true,
                 })}
                 key={id}
                 ref={itemRefs[index]}

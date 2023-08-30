@@ -6,6 +6,7 @@ import { ContactPage } from './Pages/ContactPage';
 import { DetailsPage } from './Pages/DetailsPage';
 import HomePage from './Pages/HomePage';
 import Page from './Pages/Page';
+import ServicesPage from './Pages/ServicesPage';
 
 export const App = () => {
   return (
@@ -35,7 +36,7 @@ export const App = () => {
 
         <Route
           path="/services"
-          element={<Page>{/* <ServicesPage /> */}</Page>}
+          element={<Page>{<ServicesPage />}</Page>}
         />
 
         <Route
@@ -43,14 +44,14 @@ export const App = () => {
           element={<Page>{<DetailsPage />}</Page>}
         />
 
-        <Route
+        {/* <Route
           path="/blog"
           element={
             <Page>
-              <div className="example">blog</div>
+              <div>blog</div>
             </Page>
           }
-        />
+        /> */}
 
         <Route
           path="/company"

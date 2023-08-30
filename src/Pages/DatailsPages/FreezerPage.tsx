@@ -33,7 +33,7 @@ const freezer = {
   nameImg: 'refrigerator-AdobeStock.jpeg',
   contents: [
     'Memphis Appliance Services repairs and installs all types of refrigeration, including wine fridges, stand-alone freezers, ice makers, and more, from all the major brands of refrigerators from LG and GE to Kenmore and everything in between.',
-    'We are a full-service repair company serving Loganville, GA and the surrounding areas. You can count on the expertise of our technicians when it comes to side by side, commercial fridges, standard refrigerators, and built-ins. Our work will exceed expectations and ensure complete satisfaction for your refrigerator and freezer maintenance.',
+    'We are a full-service repair company serving Memphis, TN. You can count on the expertise of our technicians when it comes to side by side, commercial fridges, standard refrigerators, and built-ins. Our work will exceed expectations and ensure complete satisfaction for your refrigerator and freezer maintenance.',
   ],
   commonRepairs: {
     description: '',
@@ -101,7 +101,7 @@ function FreezerPage() {
 
           <ImageTextModule
             p={[
-              'When your refrigerator or freezer goes caput, the need is immediate. No one wants all that food to go to waste. So, keep the door shut and call for help from Memphis Appliance Services. We are your local repair and service in Loganville, GA and the surrounding areas so that we can get your refrigerator or freezer repaired fast. When you need immediate refrigerator repair, we are here to help. We totally understand the inconvenience of a refrigerator on the fritz.',
+              'When your refrigerator or freezer goes caput, the need is immediate. No one wants all that food to go to waste. So, keep the door shut and call for help from Memphis Appliance Services. We are your local repair and service in Memphis, TN so that we can get your refrigerator or freezer repaired fast. When you need immediate refrigerator repair, we are here to help. We totally understand the inconvenience of a refrigerator on the fritz.',
               'Memphis Appliance Services will be sure to diagnose the issue and make repairs with quality parts. Keeping your food cold is our primary goal when you need a refrigerator repair.',
             ]}
           >
@@ -156,7 +156,7 @@ function FreezerPage() {
       </section>
 
       <section>
-        <div className="container container--pi-10">
+        <div className="container container--pi-10 container--page">
           <h3 className="page__titleH3">
             Quality Parts for Your Refrigerator & Freezer Repair
           </h3>
@@ -219,8 +219,7 @@ function FreezerPage() {
 
           <div className="list">
             <p className="list__title">
-              Our team promises the following standards of service for all our
-              Memphis clients:
+              Our team promises the following standards of service for all our Memphis clients:
             </p>
             <ul className="list--block list--block-wrap">
               {ourTeamQualifications.map((item) => (
@@ -238,10 +237,7 @@ function FreezerPage() {
           <Frame mode="dark">
             <div className="container container--center container--mb-15">
               <p className="text page__text3">
-                We are ready for every job, managing projects with the skill and
-                experience our clients have come to expect. Please get in touch
-                to learn more about our team, company, or details about our
-                services in Loganville, GA and the surrounding areas.
+                We are ready for every job, managing projects with the skill and experience our clients have come to expect. Please get in touch to learn more about our team, company, or details about our services in Memphis, TN.
               </p>
             </div>
             <div className="container container--maxW-800 container--center">

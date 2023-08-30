@@ -3,6 +3,9 @@ import { useLocation } from 'react-router-dom';
 import { DiswasherPage } from './DatailsPages/DiswasherPage';
 import { DryerPage } from './DatailsPages/DryerPage';
 import FreezerPage from './DatailsPages/FreezerPage';
+import GarbagePage from './DatailsPages/GarbagePage';
+import OvenPage from './DatailsPages/OvenPage';
+import WashingPage from './DatailsPages/WashingPage';
 
 export function DetailsPage() {
   const location = useLocation();
@@ -19,8 +22,8 @@ export function DetailsPage() {
   case 'freezer':
     return <FreezerPage />;
 
-    // case 'oven':
-    //   return <OvenPage infoDetails={infoDetails} title={title} />;
+  case 'oven':
+    return <OvenPage />;
 
   case 'dishwasher':
     return <DiswasherPage />;
@@ -28,11 +31,11 @@ export function DetailsPage() {
   case 'dryer':
     return <DryerPage />;
 
-    // case 'washing':
-    //   return <WashingPage infoDetails={infoDetails} title={title} />;
+  case 'washing':
+    return <WashingPage />;
 
-    // case 'garbage':
-    //   return <GarbagePage infoDetails={infoDetails} title={title} />;
+  case 'garbage':
+    return <GarbagePage />;
 
   default:
     return null;

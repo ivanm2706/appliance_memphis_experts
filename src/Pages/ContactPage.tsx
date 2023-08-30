@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import emailjs from '@emailjs/browser';
+import { sendEmail } from '../helpers/sendEmail';
 
 const listRepairInputs = [
   {
@@ -290,18 +290,12 @@ export function ContactPage() {
       message,
     };
 
-    emailjs
-      .send('service_bno6lq8', 'template_n5yq677', data, 'q_x__o2rJsUO-X2Un')
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-        },
-        (err) => {
-          console.log('FAILED...', err);
-        },
-      );
-
-    resetForm();
+    sendEmail(data)
+      .then(res => {
+        console.log(res);
+        resetForm();
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -407,7 +401,7 @@ export function ContactPage() {
             </label>
 
             <div className="form__wrapper-button">
-              <button type="submit" className="button button--book-light">
+              <button type="submit" className="button button--book">
                 Submit
               </button>
             </div>

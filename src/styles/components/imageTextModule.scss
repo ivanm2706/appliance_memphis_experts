@@ -44,6 +44,7 @@
     position: relative;
     width: 80%;
     max-height: 300px;
+    min-height: 300px;
 
     @include onTablet {
       width: 35%;

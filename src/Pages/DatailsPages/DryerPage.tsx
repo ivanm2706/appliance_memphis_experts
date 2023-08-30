@@ -13,7 +13,7 @@ const dryerObj = {
   nameImg: 'clothes-dryer-intro-img.jpg',
   contents: [
     'Can you even imagine going back to the days of clotheslines? The risk of rain, storms, bird droppings, and more becomes a real problem. And then you have to rewash clothing. Chances are you never even think of those days. But, there are still many things that can go wrong with your dryer, causing you to call for dryer repair. And if you ignore the signs that your dryer needs repair, you could be putting the entire family and home at significant risk.',
-    'No doubt, our dryers are an excellent tool for the entire family. They make your clothes fluffier and softer, need less ironing, and dry faster. Keep that dryer running as it should for as long as possible with quality appliance repair from Atlanta Appliance Services in Loganville, GA and the surrounding areas.',
+    'No doubt, our dryers are an excellent tool for the entire family. They make your clothes fluffier and softer, need less ironing, and dry faster. Keep that dryer running as it should for as long as possible with quality appliance repair from Memphis Appliance Services in Memphis, TN.',
   ],
   commonRepairs: {
     description: '',
@@ -79,10 +79,9 @@ export function DryerPage() {
           <Frame mode="white">
             <h3 className="page__titleH3">Signs You Need Dryer Repair</h3>
 
-            <div className="container container--conter">
+            <div className="container container--center">
               <p className="page__subtitle">
-                To determine whether you need a dryer repair expert, here are a
-                few of the more obvious signs you may notice.
+                To determine whether you need a dryer repair expert, here are a few of the more obvious signs you may notice.
               </p>
             </div>
 
@@ -200,7 +199,7 @@ export function DryerPage() {
             Often a broken dryer requires a replacement component. The repair
             will only be durable if we use good-quality spares. The
             professionals at&nbsp;
-            <strong>Atlanta Appliance Services</strong>
+            <strong>Memphis Appliance Services</strong>
             &nbsp;know how to find the best spare parts. And that is good news
             for you. Furthermore, our team knows which products have performed
             well in real-life conditions and will use those components in your
@@ -235,7 +234,7 @@ export function DryerPage() {
 
           <p className="page__subtitle">
             You can trust the experience of our trained technicians at&nbsp;
-            <strong>Atlanta Appliance Services.</strong>
+            <strong>Memphis Appliance Services.</strong>
             &nbsp;We will send our expert technicians to your location in fully
             equipped vans with everything they need to carry out the repairs
             promptly and ensure your appliance is running well. And in the truck
@@ -260,9 +259,9 @@ export function DryerPage() {
               <div className="callUs callUs--white">
                 <p>
                   To learn more about the dryer repair and installation we
-                  provide in Loganville, GA and the surrounding areas, don’t
+                  provide in Memphis, TN, don’t
                   hesitate to call our staff at&nbsp;
-                  <strong>Atlanta Appliance Services</strong>
+                  <strong>Memphis Appliance Services</strong>
                   &nbsp;at
                 </p>
                 <Tel classes="callUs__tel" />

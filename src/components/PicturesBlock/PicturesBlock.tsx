@@ -24,7 +24,7 @@ export function PicturesBlock({ imageNames, text }: Props) {
 
       {text && (
         <p className="puctures-block__text">
-          Fisher & Paykel dishwasher control board replacement.
+          {text}
         </p>
       )}
     </>

@@ -34,10 +34,6 @@
   &__img {
     width: 100%;
     display: block;
-
-    &:hover .before-after__image > img {
-      transform: scale(1.1);
-    }
   }
 
   &__text {

@@ -25,8 +25,8 @@ const dishwasher = {
   name: 'dishwasher',
   nameImg: 'dishwasher-repair-intro-image.jpg',
   contents: [
-    'Dirty dishes are never something you or your family want to deal with. This is especially true after a large gathering when you want to relax and spend time with your family and guests instead of clanging around the kitchen. If your dishwasher needs service, Atlanta Appliance Services is ready! Our technician will be on the way to get your dishwasher running smoothly again.',
-    'No matter your dishwasher brand, we will repair it. Today’s dishwashers, like all modern appliances, are sophisticated pieces of machinery. Dishwashers have control boards, pumps, sensors, and more. Occasionally, one or more of these parts may need repair or replacement. It’s important to call on an experienced appliance repair technician to diagnose and repair your dishwasher in Loganville, GA and the surrounding areas.',
+    'Dirty dishes are never something you or your family want to deal with. This is especially true after a large gathering when you want to relax and spend time with your family and guests instead of clanging around the kitchen. If your dishwasher needs service, Memphis Appliance Services is ready! Our technician will be on the way to get your dishwasher running smoothly again.',
+    'No matter your dishwasher brand, we will repair it. Today’s dishwashers, like all modern appliances, are sophisticated pieces of machinery. Dishwashers have control boards, pumps, sensors, and more. Occasionally, one or more of these parts may need repair or replacement. It’s important to call on an experienced appliance repair technician to diagnose and repair your dishwasher in Memphis, TN.',
   ],
   commonRepairs: {
     description: '',
@@ -115,7 +115,7 @@ export function DiswasherPage() {
                 </NavLink>
                 <p>
                   today for an inspection and maintenance call.&nbsp;
-                  <strong>Atlanta Appliance Services</strong>
+                  <strong>Memphis Appliance Services</strong>
                   &nbsp;will be out ASAP to take a look and recommend a repair.
                 </p>
               </div>
@@ -156,7 +156,7 @@ export function DiswasherPage() {
                 If your dishwasher still stinks after these steps, then you
                 likely have an issue that demands a professional’s touch. The
                 experts at&nbsp;
-                <strong>Atlanta Appliance Services</strong>
+                <strong>Memphis Appliance Services</strong>
                 &nbsp;can handle a wide range of appliance repairs, including
                 your dishwasher repair.
               </p>
@@ -190,7 +190,7 @@ export function DiswasherPage() {
 
           <div className="container container--center">
             <p className="page__subtitle">
-              <strong>Atlanta Appliance Services</strong>
+              <strong>Memphis Appliance Services</strong>
               &nbsp;is a trustworthy company with more than 15 years of
               experience in the field. Our experts are always on their toes and
               are committed to delivering high-quality services.
@@ -222,7 +222,7 @@ export function DiswasherPage() {
               <div className="callUs callUs--white">
                 <p>
                   If you want to learn more about our appliance repair in
-                  Loganville, GA and the surrounding areas, please don’t
+                  Memphis, TN, please don’t
                   hesitate to call us at
                 </p>
                 <Tel classes="callUs__tel" />

@@ -6,15 +6,6 @@
   text-transform: uppercase;
   position: relative;
 
-  &--position {
-    position: relative;
-    z-index: 15;
-  }
-
-  &--block {
-    display: block;
-  }
-
   &--menuClose {
     border: none;
     margin-top: 10px;
@@ -117,25 +108,6 @@
       content: '';
       @extend %frame;
     }
-  }
-
-  &--book-light {
-    background-color: $buttonColor;
-    color: $WhiteColor;
-    padding: 7px 40px;
-    border-radius: 5px;
-    transition: all 300ms;
-
-    &:hover {
-      scale: 1.1;
-      background-color: #5456db;
-      color: white;
-    }
-  }
-
-  &--large {
-    min-width: 200px;
-    min-height: 50px;
   }
 
   &--long {
