@@ -2,28 +2,36 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import emailjs from '@emailjs/browser';
 
-const listRepairInputs = [{
-  value: 'Refrigerator Repair',
-  checked: false,
-}, {
-  value: 'Oven / Range Repair',
-  checked: false,
-}, {
-  value: 'Dishwasher Repair',
-  checked: false,
-}, {
-  value: 'Dryer Repair',
-  checked: false,
-}, {
-  value: 'Washing Machine Repair',
-  checked: false,
-}, {
-  value: 'Appliance Installation',
-  checked: false,
-}, {
-  value: 'Garbage Disposal Installation or Repair',
-  checked: false,
-}];
+const listRepairInputs = [
+  {
+    value: 'Refrigerator Repair',
+    checked: false,
+  },
+  {
+    value: 'Oven / Range Repair',
+    checked: false,
+  },
+  {
+    value: 'Dishwasher Repair',
+    checked: false,
+  },
+  {
+    value: 'Dryer Repair',
+    checked: false,
+  },
+  {
+    value: 'Washing Machine Repair',
+    checked: false,
+  },
+  {
+    value: 'Appliance Installation',
+    checked: false,
+  },
+  {
+    value: 'Garbage Disposal Installation or Repair',
+    checked: false,
+  },
+];
 
 export function ContactPage() {
   const [checkboxes, setCheckboxes] = useState(listRepairInputs);
@@ -32,7 +40,9 @@ export function ContactPage() {
     error: false,
   });
 
-  const handlerInputName = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
+  const handlerInputName = ({
+    target: { value },
+  }: React.ChangeEvent<HTMLInputElement>) => {
     setName({
       error: false,
       value,
@@ -44,8 +54,10 @@ export function ContactPage() {
     error: false,
   });
 
-  const handlerInputEmail = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(state => ({
+  const handlerInputEmail = ({
+    target: { value },
+  }: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail((state) => ({
       ...state,
       error: false,
       value,
@@ -93,43 +105,64 @@ export function ContactPage() {
     case 4:
       return {
         positionMax: 7,
-        value: `(${newValue.substring(0, 3)}) ${newValue.substring(3, 4)}__-____`,
+        value: `(${newValue.substring(0, 3)}) ${newValue.substring(
+          3,
+          4,
+        )}__-____`,
       };
 
     case 5:
       return {
         positionMax: 8,
-        value: `(${newValue.substring(0, 3)}) ${newValue.substring(3, 5)}_-____`,
+        value: `(${newValue.substring(0, 3)}) ${newValue.substring(
+          3,
+          5,
+        )}_-____`,
       };
 
     case 6:
       return {
         positionMax: 9,
-        value: `(${newValue.substring(0, 3)}) ${newValue.substring(3, 6)}-____`,
+        value: `(${newValue.substring(0, 3)}) ${newValue.substring(
+          3,
+          6,
+        )}-____`,
       };
 
     case 7:
       return {
         positionMax: 11,
-        value: `(${newValue.substring(0, 3)}) ${newValue.substring(3, 6)}-${newValue.substring(6, 7)}___`,
+        value: `(${newValue.substring(0, 3)}) ${newValue.substring(
+          3,
+          6,
+        )}-${newValue.substring(6, 7)}___`,
       };
 
     case 8:
       return {
         positionMax: 12,
-        value: `(${newValue.substring(0, 3)}) ${newValue.substring(3, 6)}-${newValue.substring(6, 8)}__`,
+        value: `(${newValue.substring(0, 3)}) ${newValue.substring(
+          3,
+          6,
+        )}-${newValue.substring(6, 8)}__`,
       };
 
     case 9:
       return {
         positionMax: 13,
-        value: `(${newValue.substring(0, 3)}) ${newValue.substring(3, 6)}-${newValue.substring(6, 9)}_`,
+        value: `(${newValue.substring(0, 3)}) ${newValue.substring(
+          3,
+          6,
+        )}-${newValue.substring(6, 9)}_`,
       };
 
     case 10:
       return {
         positionMax: 14,
-        value: `(${newValue.substring(0, 3)}) ${newValue.substring(3, 6)}-${newValue.substring(6, 10)}`,
+        value: `(${newValue.substring(0, 3)}) ${newValue.substring(
+          3,
+          6,
+        )}-${newValue.substring(6, 10)}`,
       };
 
     default:
@@ -140,12 +173,14 @@ export function ContactPage() {
     }
   };
 
-  const handlerInputPhone = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
+  const handlerInputPhone = ({
+    target,
+  }: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = target;
 
     const valuePhone = getValuePhone(value);
 
-    setPhone(state => ({
+    setPhone((state) => ({
       ...state,
       error: false,
       value: valuePhone.value,
@@ -165,7 +200,7 @@ export function ContactPage() {
       return;
     }
 
-    setPhone(state => ({
+    setPhone((state) => ({
       ...state,
       edit: true,
       value: getValuePhone(value, true).value,
@@ -174,7 +209,9 @@ export function ContactPage() {
 
   const [message, setMessage] = useState('');
 
-  const handlerInputMessage = ({ target: { value } }: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handlerInputMessage = ({
+    target: { value },
+  }: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(value);
   };
 
@@ -188,19 +225,21 @@ export function ContactPage() {
     setEmail({ ...initialValue });
     setPhone({ ...initialValue });
     setMessage('');
-    setCheckboxes([...listRepairInputs.map(item => {
-      if (item.checked) {
-        return {
-          ...item,
-          checked: false,
-        };
-      }
+    setCheckboxes([
+      ...listRepairInputs.map((item) => {
+        if (item.checked) {
+          return {
+            ...item,
+            checked: false,
+          };
+        }
 
-      return item;
-    })]);
+        return item;
+      }),
+    ]);
   };
 
-  const handlerCheckbox = (i:number, checked: boolean) => {
+  const handlerCheckbox = (i: number, checked: boolean) => {
     const previosCheckboxes = [...checkboxes];
 
     previosCheckboxes[i].checked = checked;
@@ -214,7 +253,7 @@ export function ContactPage() {
 
     if (name.value === '') {
       error = true;
-      setName(state => ({
+      setName((state) => ({
         ...state,
         error: true,
       }));
@@ -222,7 +261,7 @@ export function ContactPage() {
 
     if (email.value === '') {
       error = true;
-      setEmail(state => ({
+      setEmail((state) => ({
         ...state,
         error: true,
       }));
@@ -230,7 +269,7 @@ export function ContactPage() {
 
     if (getValuePhone(phone.value).positionMax !== 14) {
       error = true;
-      setPhone(state => ({
+      setPhone((state) => ({
         ...state,
         error: true,
       }));
@@ -251,12 +290,16 @@ export function ContactPage() {
       message,
     };
 
-    emailjs.send('service_bno6lq8', 'template_n5yq677', data, 'q_x__o2rJsUO-X2Un')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      }, (err) => {
-        console.log('FAILED...', err);
-      });
+    emailjs
+      .send('service_bno6lq8', 'template_n5yq677', data, 'q_x__o2rJsUO-X2Un')
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (err) => {
+          console.log('FAILED...', err);
+        },
+      );
 
     resetForm();
   };
@@ -285,7 +328,9 @@ export function ContactPage() {
                 onChange={handlerInputName}
                 type="text"
               />
-              {name.error && <p className="form__title-error">This field is required.</p>}
+              {name.error && (
+                <p className="form__title-error">This field is required.</p>
+              )}
             </label>
 
             <label className="form__label">
@@ -303,9 +348,7 @@ export function ContactPage() {
                 onChange={handlerInputEmail}
               />
               {email.error && (
-                <p className="form__title-error">
-                  This field is required.
-                </p>
+                <p className="form__title-error">This field is required.</p>
               )}
             </label>
 
@@ -326,9 +369,7 @@ export function ContactPage() {
                 placeholder="(___) ___-____"
               />
               {phone.error && (
-                <p className="form__title-error">
-                  This field is required.
-                </p>
+                <p className="form__title-error">This field is required.</p>
               )}
             </label>
           </div>
@@ -337,23 +378,19 @@ export function ContactPage() {
             <p className="form__title">How Can We Help?</p>
             <ul className="form__list">
               {checkboxes.map(({ value, checked }, i) => (
-                <li
-                  key={value}
-                >
+                <li key={value}>
                   <label className="form__label">
                     <input
                       className="form__checkbox"
                       type="checkbox"
                       name="repair"
-                      onChange={e => {
+                      onChange={(e) => {
                         handlerCheckbox(i, e.target.checked);
                       }}
                       checked={checked}
                       value={value}
                     />
-                    <p className="form__title-checkbox">
-                      {value}
-                    </p>
+                    <p className="form__title-checkbox">{value}</p>
                   </label>
                 </li>
               ))}
@@ -361,9 +398,7 @@ export function ContactPage() {
           </div>
           <div>
             <label className="form__label">
-              <p className="form__title">
-                Comment or Message
-              </p>
+              <p className="form__title">Comment or Message</p>
               <textarea
                 className="form__textarea"
                 value={message}
@@ -372,7 +407,9 @@ export function ContactPage() {
             </label>
 
             <div className="form__wrapper-button">
-              <button type="submit" className="button button--book-light">Submit</button>
+              <button type="submit" className="button button--book-light">
+                Submit
+              </button>
             </div>
           </div>
         </form>

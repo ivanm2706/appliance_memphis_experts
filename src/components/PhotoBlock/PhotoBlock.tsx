@@ -5,10 +5,7 @@ type Props = {
   text?: string;
 };
 
-export function PhotoBlock({
-  imageName,
-  text,
-}: Props) {
+export function PhotoBlock({ imageName, text }: Props) {
   return (
     <>
       <div className="photoBlock">

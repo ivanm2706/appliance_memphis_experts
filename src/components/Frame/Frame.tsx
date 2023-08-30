@@ -15,9 +15,7 @@ export function Frame({ icon, children, mode }: Props) {
         <div className="frame__background">
           <div className="frame__border">
             <div className="frame__padding">
-              <div className="frame__position">
-                {children}
-              </div>
+              <div className="frame__position">{children}</div>
             </div>
           </div>
         </div>

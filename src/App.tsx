@@ -61,7 +61,14 @@ export const App = () => {
           }
         />
 
-        <Route path="/contact" element={<Page><ContactPage /></Page>} />
+        <Route
+          path="/contact"
+          element={
+            <Page>
+              <ContactPage />
+            </Page>
+          }
+        />
       </Routes>
     </>
   );

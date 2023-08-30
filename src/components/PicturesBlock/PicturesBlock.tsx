@@ -5,10 +5,7 @@ type Props = {
   text?: string;
 };
 
-export function PicturesBlock({
-  imageNames,
-  text,
-}: Props) {
+export function PicturesBlock({ imageNames, text }: Props) {
   return (
     <>
       <div className="puctures-block">
@@ -25,7 +22,11 @@ export function PicturesBlock({
         ))}
       </div>
 
-      {text && <p className="puctures-block__text">Fisher & Paykel dishwasher control board replacement.</p>}
+      {text && (
+        <p className="puctures-block__text">
+          Fisher & Paykel dishwasher control board replacement.
+        </p>
+      )}
     </>
   );
 }

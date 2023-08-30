@@ -57,10 +57,12 @@ export function ImageTextModule({
   }, []);
 
   return (
-    <div className={classNames({
-      imageTextModule: true,
-      'imageTextModule--img-right': isPictureLeft,
-    })}>
+    <div
+      className={classNames({
+        imageTextModule: true,
+        'imageTextModule--img-right': isPictureLeft,
+      })}
+    >
       <div ref={div2Ref} className="imageTextModule__img">
         <span
           className={classNames({
@@ -80,10 +82,12 @@ export function ImageTextModule({
           </h3>
         )}
 
-        <div className={classNames({
-          'imageTextModule__subtitles': true,
-          'imageTextModule__subtitles--markedList': markForList,
-        })}>
+        <div
+          className={classNames({
+            imageTextModule__subtitles: true,
+            'imageTextModule__subtitles--markedList': markForList,
+          })}
+        >
           {p.map((text, i) => {
             const phrase = 'Memphis Appliance Services';
             const parts = text.split(phrase);
@@ -96,12 +100,16 @@ export function ImageTextModule({
                 })}
               >
                 {orderNumberForList && (
-                  <span className="imageTextModule__order">{orderNumberForList[i]}</span>
+                  <span className="imageTextModule__order">
+                    {orderNumberForList[i]}
+                  </span>
                 )}
-                <p className={classNames({
-                  imageTextModule__subtitle: true,
-                  'imageTextModule__subtitle--second': pStyleSecond,
-                })}>
+                <p
+                  className={classNames({
+                    imageTextModule__subtitle: true,
+                    'imageTextModule__subtitle--second': pStyleSecond,
+                  })}
+                >
                   {strongStartTextForEveryP && (
                     <strong>{strongStartTextForEveryP[i]}</strong>
                   )}
