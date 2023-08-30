@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.b7390d01.css",
-    "main.js": "./static/js/main.38ee6ffd.js",
+    "main.css": "./static/css/main.576a1a09.css",
+    "main.js": "./static/js/main.19a657fc.js",
     "static/media/home-bg.jpg": "./static/media/home-bg.35ac0cd014fe98e1435b.jpg",
     "static/media/title.jpg": "./static/media/title.aa0ea783a6556e62456e.jpg",
     "static/media/benefits.jpg": "./static/media/benefits.8dd92a79899f111be57a.jpg",
@@ -18,7 +18,6 @@
     "static/media/email.svg": "./static/media/email.8cc6dfdeaff6cee0c711.svg",
     "static/media/phone-hover.svg": "./static/media/phone-hover.4a68848985a8f04c5e36.svg",
     "static/media/phone.svg": "./static/media/phone.76cd5617e6e790cb2095.svg",
-    "static/media/plus.svg": "./static/media/plus.0225d7054431ddd953b0.svg",
     "static/media/benefitsPlus.svg": "./static/media/benefitsPlus.0a8654b78149ebb372ce.svg",
     "static/media/clock.svg": "./static/media/clock.5507a100f551417d1cf4.svg",
     "static/media/tick.svg": "./static/media/tick.8548e8b1c198c395b8e3.svg",
@@ -27,11 +26,11 @@
     "static/media/arrow-down-blue.svg": "./static/media/arrow-down-blue.1aa4732fe661874f5ef2.svg",
     "static/media/arrow-down.svg": "./static/media/arrow-down.1a9fc18f1349d6c53f29.svg",
     "static/media/line.svg": "./static/media/line.de356e2b93a8e744ff04.svg",
-    "main.b7390d01.css.map": "./static/css/main.b7390d01.css.map",
-    "main.38ee6ffd.js.map": "./static/js/main.38ee6ffd.js.map"
+    "main.576a1a09.css.map": "./static/css/main.576a1a09.css.map",
+    "main.19a657fc.js.map": "./static/js/main.19a657fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7390d01.css",
-    "static/js/main.38ee6ffd.js"
+    "static/css/main.576a1a09.css",
+    "static/js/main.19a657fc.js"
   ]
 }
