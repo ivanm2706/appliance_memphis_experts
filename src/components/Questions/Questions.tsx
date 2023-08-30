@@ -116,7 +116,7 @@ export function Questions() {
               >
                 <img
                   className="questions__img-consult"
-                  src="/public/images/konsultacija-238x300.png"
+                  src="./images/konsultacija-238x300.png"
                   alt="Konsultacija"
                   srcSet="https://unix.kh.ua/wp-content/uploads/2020/11/konsultacija.png 317w, https://unix.kh.ua/wp-content/uploads/2020/11/konsultacija-238x300.png 238w"
                   sizes="(max-width: 317px) 100vw, 317px"
