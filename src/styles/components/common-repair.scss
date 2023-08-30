@@ -40,6 +40,7 @@
     margin-bottom: 20px;
   }
 
+  // page__text2
   &__description {
     color: $textColor;
     @include text(16px, 400);
@@ -54,6 +55,7 @@
     }
   }
 
+  // list__ordered
   &__list {
     @include text(16.8px);
     color: $textColor;

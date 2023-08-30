@@ -2,6 +2,8 @@ import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import { CompanyPage } from './Pages/CompanyPage';
+import { ContactPage } from './Pages/ContactPage';
+import { DetailsPage } from './Pages/DetailsPage';
 import HomePage from './Pages/HomePage';
 import Page from './Pages/Page';
 
@@ -38,7 +40,7 @@ export const App = () => {
 
         <Route
           path="/services/:service"
-          element={<Page>{/* <DetailsPage /> */}</Page>}
+          element={<Page>{<DetailsPage />}</Page>}
         />
 
         <Route
@@ -59,7 +61,7 @@ export const App = () => {
           }
         />
 
-        <Route path="/contact" element={<Page>{/* <ContactPage /> */}</Page>} />
+        <Route path="/contact" element={<Page><ContactPage /></Page>} />
       </Routes>
     </>
   );

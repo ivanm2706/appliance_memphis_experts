@@ -1,4 +1,17 @@
 .container {
+  &--center {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &--maxW-600 {
+    max-width: 600px;
+  }
+
+  &--maxW-800 {
+    max-width: 800px;
+  }
+
   &--page {
     max-width: 1200px;
     margin: 0 auto;
@@ -41,5 +54,13 @@
 
   &--mb-35 {
     margin-bottom: 35px;
+  }
+
+  &--mb-15 {
+    margin-bottom: 15px;
+  }
+
+  &--pb-15 {
+    padding-bottom: 15px;
   }
 }

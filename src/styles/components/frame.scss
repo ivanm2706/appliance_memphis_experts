@@ -25,8 +25,14 @@ $borderRadiusBlock: 12px;
       &::before {
         @extend %borderBlock;
         border: 2px solid #bad8eb;
+        z-index: 5;
       }
     }
+  }
+
+  &__position {
+    position: relative;
+    z-index: 6;
   }
 
   &--light {

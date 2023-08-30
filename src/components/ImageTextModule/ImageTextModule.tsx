@@ -11,6 +11,11 @@ type Props = {
   p2?: string;
   p3?: string;
   withoutFrames?: boolean;
+  pStyleSecond?: boolean;
+  strongStartTextForEveryP?: string[];
+  orderNumberForList?: number[];
+  isPictureLeft?: boolean;
+  markForList?: boolean;
 };
 
 export function ImageTextModule({
@@ -21,6 +26,11 @@ export function ImageTextModule({
   titleAfterSpan,
   contact,
   withoutFrames,
+  pStyleSecond,
+  strongStartTextForEveryP,
+  orderNumberForList,
+  markForList,
+  isPictureLeft,
 }: Props) {
   const div1Ref = useRef<HTMLDivElement | null>(null);
   const div2Ref = useRef<HTMLDivElement | null>(null);
@@ -47,7 +57,10 @@ export function ImageTextModule({
   }, []);
 
   return (
-    <div className="imageTextModule">
+    <div className={classNames({
+      imageTextModule: true,
+      'imageTextModule--img-right': isPictureLeft,
+    })}>
       <div ref={div2Ref} className="imageTextModule__img">
         <span
           className={classNames({
@@ -67,20 +80,39 @@ export function ImageTextModule({
           </h3>
         )}
 
-        <div className="imageTextModule__subtitles">
-          {p.map((text) => {
+        <div className={classNames({
+          'imageTextModule__subtitles': true,
+          'imageTextModule__subtitles--markedList': markForList,
+        })}>
+          {p.map((text, i) => {
             const phrase = 'Memphis Appliance Services';
             const parts = text.split(phrase);
 
             return (
-              <p className="imageTextModule__subtitle" key={text}>
-                {parts.map((partText, index) => (
-                  <i key={partText}>
-                    {index > 0 && <strong>{phrase}</strong>}
-                    {partText}
-                  </i>
-                ))}
-              </p>
+              <div
+                key={text}
+                className={classNames({
+                  'imageTextModule__order-block': orderNumberForList,
+                })}
+              >
+                {orderNumberForList && (
+                  <span className="imageTextModule__order">{orderNumberForList[i]}</span>
+                )}
+                <p className={classNames({
+                  imageTextModule__subtitle: true,
+                  'imageTextModule__subtitle--second': pStyleSecond,
+                })}>
+                  {strongStartTextForEveryP && (
+                    <strong>{strongStartTextForEveryP[i]}</strong>
+                  )}
+                  {parts.map((partText, index) => (
+                    <i key={partText}>
+                      {index > 0 && <strong>{phrase}</strong>}
+                      {partText}
+                    </i>
+                  ))}
+                </p>
+              </div>
             );
           })}
         </div>

@@ -8,6 +8,14 @@
     gap: 20px;
   }
 
+  &--img-right {
+    & .imageTextModule__img {
+      @include onTablet {
+        order: 2;
+      }
+    }
+  }
+
   &__wrapper {
     position: absolute;
     top: 0;
@@ -43,13 +51,11 @@
 
     @media screen and (min-width: 1048px) {
       width: 40%;
-      flex: 4;
     }
   }
 
   &__content {
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
 
     @include onTablet {
       width: 75%;
@@ -58,7 +64,6 @@
 
     @media screen and (min-width: 1048px) {
       width: 60%;
-      flex: 6;
     }
   }
 
@@ -73,6 +78,31 @@
   }
 
   &__subtitles {
+    &--markedList {
+      columns: 2;
+      -webkit-columns: 2;
+      column-gap: 20px;
+      
+
+      & > * {
+        display: block;
+        width: fit-content;
+        margin-left: 10px;
+        position: relative;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          left: -25px;
+          top: 1px;
+          @include bg-i('../../images/icons/tick.svg');
+        }
+      }
+    }
+
     & i {
       font-style: normal;
     }
@@ -83,7 +113,35 @@
   }
 
   &__subtitle {
-    @include text(16px, 400, 1.2px);
-    line-height: 1.5;
+    @include text(16px, 400);
+    line-height: 24.56px;
+
+    &--second {
+      color: $textColor;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__order-block {
+    display: flex;
+    padding-inline-start: 10px;
+  }
+
+  &__order {
+    @include text(16px, 400);
+    color: $textColor;
+    line-height: 24.56px;
+    position: relative;
+    margin-right: 5px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+
+    &::after {
+      content: '.';
+    }
   }
 }

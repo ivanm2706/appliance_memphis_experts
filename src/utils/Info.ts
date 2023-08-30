@@ -78,42 +78,12 @@ export const info = [
     contentMiddle: '',
   },
   {
-    id: 4,
-    name: 'freezer',
-    nameImg: 'refrigerator-AdobeStock.jpeg',
-    contentFirst:
-      'Atlanta Appliance Services repairs and installs all types of refrigeration, including wine fridges, stand-alone freezers, ice makers, and more, from all the major brands of refrigerators from LG and GE to Kenmore and everything in between.',
-    contentSecond: '',
-    commonRepairs: {
-      description: '',
-      footerText: '',
-      issues: [],
-    },
-    contentMiddle:
-      'We are a full-service repair company serving Loganville, GA and the surrounding areas. You can count on the expertise of our technicians when it comes to side by side, commercial fridges, standard refrigerators, and built-ins. Our work will exceed expectations and ensure complete satisfaction for your refrigerator and freezer maintenance.',
-  },
-  {
     id: 5,
     name: 'oven',
     nameImg: 'stove-repair-intro-image.jpg',
     contentFirst:
       'At Atlanta Appliance Services, we don’t ever want dinner to get cold. After all, mealtime is what brings families together. So, don’t miss a single meal because of a broken appliance.  If your oven has been acting up lately or if one of your burners is not working, you can count on Atlanta Appliance Services for oven and stove repair.',
     contentSecond: '',
-    commonRepairs: {
-      description: '',
-      footerText: '',
-      issues: [],
-    },
-    contentMiddle: '',
-  },
-  {
-    id: 6,
-    name: 'dryer',
-    nameImg: 'clothes-dryer-intro-img.jpg',
-    contentFirst:
-      'Can you even imagine going back to the days of clotheslines? The risk of rain, storms, bird droppings, and more becomes a real problem. And then you have to rewash clothing. Chances are you never even think of those days. But, there are still many things that can go wrong with your dryer, causing you to call for dryer repair. And if you ignore the signs that your dryer needs repair, you could be putting the entire family and home at significant risk.',
-    contentSecond:
-      'No doubt, our dryers are an excellent tool for the entire family. They make your clothes fluffier and softer, need less ironing, and dry faster. Keep that dryer running as it should for as long as possible with quality appliance repair from Atlanta Appliance Services in Loganville, GA and the surrounding areas.',
     commonRepairs: {
       description: '',
       footerText: '',
