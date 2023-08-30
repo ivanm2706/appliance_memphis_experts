@@ -71,6 +71,11 @@
   &__title {
     @include text(24px, 700);
     margin-bottom: 10px;
+    text-align: center;
+
+    @include onTablet {
+      text-align: left;
+    }
 
     & span {
       color: $blue;

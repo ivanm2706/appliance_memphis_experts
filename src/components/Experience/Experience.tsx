@@ -22,12 +22,15 @@ export function Experience() {
             'We are a personal repair service that focuses on the needs of the individual family. When you need your appliance fixed or installed with expertise you can trust, contact us.',
           ]}
           contact={
-            <NavLink
-              to="/contact"
-              className="button button--book button--shake"
-            >
-              Contact us
-            </NavLink>
+            <div className="container container--center">
+              <NavLink
+                to="/contact"
+                className="button button--book button--shake"
+              >
+                Contact us
+              </NavLink>
+            </div>
+            
           }
         >
           <span style={imageStyle} />
