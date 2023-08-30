@@ -30,7 +30,6 @@ export function Experience() {
                 Contact us
               </NavLink>
             </div>
-            
           }
         >
           <span style={imageStyle} />
