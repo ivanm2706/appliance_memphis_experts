@@ -146,7 +146,7 @@ function OvenPage() {
       </section>
 
       <section>
-        <div className="container container--pi-10 container--page">
+        <div className="container container--pi-10 container--page container--pb-30">
           <PicturesBlock
             imageNames={[
               'Jenn-Air-range-bad-control-board-2-600x600.jpg',

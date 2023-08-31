@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Frame } from '../../components/Frame';
 import { ImageTextModule } from '../../components/ImageTextModule';
-import { Line } from '../../components/Line';
 import { PicturesBlock } from '../../components/PicturesBlock';
 import Tel from '../../components/Tel/Tel';
 
@@ -91,12 +90,8 @@ function WashingPage() {
         </div>
       </section>
 
-      <div className="container container--pi-10 container--page">
-        <Line />
-      </div>
-
       <section>
-        <div className="container container--page container--pi-10 container--pb-mainSection">
+        <div className="container container--page container--pi-10 container--pb-30">
           <PicturesBlock
             imageNames={[
               'kenmore-washer-repair-1-600x600.jpg',
