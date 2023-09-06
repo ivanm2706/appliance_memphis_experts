@@ -13,12 +13,6 @@ const garbage = {
     'There is no doubt, modern appliances make life convenient, and we rely on them every day. If one of them breaks down or starts to malfunction, it can disrupt our daily life and cause problems. At Memphis Appliance Services, we provide professional repair services for all kinds of appliances.',
     'Our trained and experienced technicians will make sure your damaged device is up and running in no time. So, if you’re looking for reliable appliance repair in Memphis, TN, we’re the right choice for you.',
   ],
-  commonRepairs: {
-    description: '',
-    footerText: '',
-    issues: [],
-  },
-  contentMiddle: '',
 };
 
 const imageStyle = {

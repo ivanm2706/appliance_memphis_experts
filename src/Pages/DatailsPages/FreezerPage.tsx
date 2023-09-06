@@ -35,11 +35,6 @@ const freezer = {
     'Memphis Appliance Services repairs and installs all types of refrigeration, including wine fridges, stand-alone freezers, ice makers, and more, from all the major brands of refrigerators from LG and GE to Kenmore and everything in between.',
     'We are a full-service repair company serving Memphis, TN. You can count on the expertise of our technicians when it comes to side by side, commercial fridges, standard refrigerators, and built-ins. Our work will exceed expectations and ensure complete satisfaction for your refrigerator and freezer maintenance.',
   ],
-  commonRepairs: {
-    description: '',
-    footerText: '',
-    issues: [],
-  },
 };
 
 const imageStyle = {

@@ -5,8 +5,8 @@ import { NavHeader } from './NavHeader';
 import { NavMobile } from './NavMobile';
 
 function Navigation() {
-  const [isActiveMenuMobile, setIsActiveMenuMobile] = useState(false);
   const { pathname } = useLocation();
+  const [isActiveMenuMobile, setIsActiveMenuMobile] = useState(false);
 
   useEffect(() => {
     setIsActiveMenuMobile(false);

@@ -15,12 +15,6 @@ const dryerObj = {
     'Can you even imagine going back to the days of clotheslines? The risk of rain, storms, bird droppings, and more becomes a real problem. And then you have to rewash clothing. Chances are you never even think of those days. But, there are still many things that can go wrong with your dryer, causing you to call for dryer repair. And if you ignore the signs that your dryer needs repair, you could be putting the entire family and home at significant risk.',
     'No doubt, our dryers are an excellent tool for the entire family. They make your clothes fluffier and softer, need less ironing, and dry faster. Keep that dryer running as it should for as long as possible with quality appliance repair from Memphis Appliance Services in Memphis, TN.',
   ],
-  commonRepairs: {
-    description: '',
-    footerText: '',
-    issues: [],
-  },
-  contentMiddle: '',
 };
 
 const imageStyle = {

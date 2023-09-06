@@ -1,11 +1,8 @@
-/* eslint-disable max-len */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Frame } from '../components/Frame';
 import { ImageTextModule } from '../components/ImageTextModule';
-// import Info from '../components/Info/Info';
 import Tel from '../components/Tel/Tel';
-// import { info } from '../utils/Info';
 
 const imageStyle = {
   backgroundImage: 'url("./images/about-us-page-street.jpg")',

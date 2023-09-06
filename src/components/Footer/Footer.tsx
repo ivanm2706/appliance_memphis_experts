@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-// import { emailjs } from '@emailjs/browser';
 import React, { useState } from 'react';
 import { Logo } from '../Logo/Logo';
 import Tel from '../Tel/Tel';

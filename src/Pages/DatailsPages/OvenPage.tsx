@@ -28,12 +28,6 @@ const oven = {
   contents: [
     'At Memphis Appliance Services, we don’t ever want dinner to get cold. After all, mealtime is what brings families together. So, don’t miss a single meal because of a broken appliance.  If your oven has been acting up lately or if one of your burners is not working, you can count on Memphis Appliance Services for oven and stove repair.',
   ],
-  commonRepairs: {
-    description: '',
-    footerText: '',
-    issues: [],
-  },
-  contentMiddle: '',
 };
 
 const imageStyle = {

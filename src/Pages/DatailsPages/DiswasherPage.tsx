@@ -28,12 +28,6 @@ const dishwasher = {
     'Dirty dishes are never something you or your family want to deal with. This is especially true after a large gathering when you want to relax and spend time with your family and guests instead of clanging around the kitchen. If your dishwasher needs service, Memphis Appliance Services is ready! Our technician will be on the way to get your dishwasher running smoothly again.',
     'No matter your dishwasher brand, we will repair it. Today’s dishwashers, like all modern appliances, are sophisticated pieces of machinery. Dishwashers have control boards, pumps, sensors, and more. Occasionally, one or more of these parts may need repair or replacement. It’s important to call on an experienced appliance repair technician to diagnose and repair your dishwasher in Memphis, TN.',
   ],
-  commonRepairs: {
-    description: '',
-    footerText: '',
-    issues: [],
-  },
-  contentMiddle: '',
 };
 
 const imageStyle = {

@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable semi */
-/* eslint-disable react/prop-types */
 import classNames from 'classnames';
 import React, { useEffect } from 'react';
 import { Email } from '../../Email';

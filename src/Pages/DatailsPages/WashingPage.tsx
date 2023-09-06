@@ -13,44 +13,6 @@ const washingMashine = {
     'With all that your washing machine does for you, it is no wonder it breaks down from time to time. Maintenance of your home’s appliances is a must for busy families and fast-paced households. That’s where our appliance repair technicians will come to your rescue: Memphis Appliance Services will keep your washer removing stains, dirt, and odor from your clothing.',
     'Household laundry rooms today serve as more than just a room to put those two appliances, the washing machine and the dryer, and perhaps the ironing board too. In many homes, they are the garage entry, the sports equipment center, the mudroom, and the overall command center for your family.',
   ],
-  commonRepairs: {
-    description:
-      'You know the sound; it is a loud booming coming from the laundry room that sounds as if the walls are crashing in around you. Your washer is off balance. But did you know that each time the washer experiences any issue, it damages the unit? Here are a few of the more common repairs we see in the field each day.',
-    footerText: [
-      'However, if your washing machine is over ten years old, you may be entering the stage where it is more cost-effective to replace the unit. In that case, your appliance repair technician can let you know the value of the washer you have and the reasons to replace it.',
-      'Furthermore, Memphis Appliance Services can install the new one, so it is done right the first time. Memphis Appliance Services exceeds expectations and ensures complete satisfaction for your appliance services in Memphis, TN.',
-    ],
-    issues: [
-      {
-        title: 'The washer is crashing and vibrating a bit too much.',
-        text: 'When the washer is making that horrible crashing and thrashing noise, it is off-balance. You adjust the clothing to be equal weight all around, and it still won’t spin right. In that case, it may need to be balanced, inspected, or leveled out.',
-      },
-      {
-        title: 'My washer won’t fill with water.',
-        text: 'Well, that is no good as your washer cannot perform its primary function without water. There could be several reasons the unit will not fill. Check the water supply to the home, then look for leaks at the connections. If those seem to be okay, call a professional. They can check the pressure switches, temperature selector switches, mainboards, and door locks.',
-      },
-      {
-        title: 'The washing machine is overfilling with water.',
-        text: 'Flooding in the laundry room is no joke. First, turn off the water to the unit, then call for appliance repair. There are several components we can check for you. It may be the pressure switch, the water inlet valve, the mainboard, and more, causing the overfill.',
-      },
-      {
-        title: 'There is water leaking from my washing machine.',
-        text: 'This is one of those problems that can creep up on you and ruin your flooring and more. Front-load washers can dump a lot of water on the floor if they have a problem with the gasket or door locking mechanism. A leaking water supply hose can cause many issues, and clogged drain lines may even be worse. Call a professional for a complete diagnosis right away.',
-      },
-      {
-        title: 'Why won’t my washer drain?',
-        text: 'If the washing machine has a problem with the spin cycle, it will not wash or drain. You may have an issue with the door, locks, motor, belts, transmission, clutch, glides, pulley, or drum roller. With that many parts to consider, call for expert diagnosis and repair.',
-      },
-      {
-        title: 'Suds are pouring out of my washer.',
-        text: 'Over-sudsing can cause a variety of problems, from the classic image of a mountain of froth running out of your washer to leftover suds that stick to your clothes and the inside of the washing machine’s drum after a cycle. Try reducing the detergent you use, and have the drain and pump checked by a professional.',
-      },
-      {
-        title: 'What is wrong? It won’t turn on at all. ',
-        text: 'Of course, the first thing to check is that the plug has not come loose from the outlet. After that, there could be several other reasons your washing machine won’t turn on. It could be a problem with the electric or motor board, which are simple replacements.',
-      },
-    ],
-  },
 };
 
 const imageStyle = {
@@ -204,7 +166,7 @@ function WashingPage() {
                 style={{
                   ...imageStyle,
                   backgroundImage:
-                    'url("./images/gallery-atlanta-appliance-repair-20210402_092407-485x1024.jpg")',
+                    'url("./images/gallery-atlanta-appliance-repair-20210402_095151-1024x485.jpg")',
                 }}
               />
             </ImageTextModule>
