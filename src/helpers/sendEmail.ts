@@ -5,7 +5,7 @@ import { PublicKey, ServiceID, TemplateID } from '../utils/emailJs';
 export const sendEmail = async (data: DataEmailJsType) => {
   try {
     const request = await emailjs.send(
-      ServiceID, //Service ID 
+      ServiceID, //Service ID
       TemplateID, //Template ID
       data,
       PublicKey, //Public Key
