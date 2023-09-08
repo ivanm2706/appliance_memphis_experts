@@ -1,13 +1,14 @@
 import emailjs from '@emailjs/browser';
 import { DataEmailJsType } from '../types/DataEmailJsType';
+import { PublicKey, ServiceID, TemplateID } from '../utils/emailJs';
 
 export const sendEmail = async (data: DataEmailJsType) => {
   try {
     const request = await emailjs.send(
-      'service_bno6lq8',
-      'template_n5yq677',
+      ServiceID, //Service ID 
+      TemplateID, //Template ID
       data,
-      'q_x__o2rJsUO-X2Un',
+      PublicKey, //Public Key
     );
 
     console.log(request);
