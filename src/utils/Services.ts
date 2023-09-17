@@ -26,7 +26,7 @@ export const services: Service[] = [
     id: 4,
   },
   {
-    title: 'Washing Mashine',
+    title: 'Washing Machine',
     url: 'washing',
     img: 'washing',
     id: 5,

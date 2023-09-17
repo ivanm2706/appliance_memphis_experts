@@ -19,7 +19,7 @@ export function Experience() {
           titleSpan="for You"
           p={[
             'Memphis Appliance Services is known for quality services, exceptional efficiency, and the highest level of professionalism. We exceed your expectations and ensure complete satisfaction for your appliance repair services in Memphis, TN.',
-            'We are a personal repair service that focuses on the needs of the individual family. When you need your appliance fixed or installed with expertise you can trust, contact us.',
+            'We are a personal repair service that focuses on the needs of the individual families. When you need your appliance fixed or installed with expertise you can trust, contact us.',
           ]}
           contact={
             <div className="container container--center">

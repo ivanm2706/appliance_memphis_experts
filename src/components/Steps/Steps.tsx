@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { useEffect, useRef } from 'react';
 import { steps } from '../../utils/Steps';
 
-export function Steps() {
+export default function Steps() {
   const h2Ref = useRef<HTMLHeadingElement | null>(null);
   const items = [1, 2, 3, 4];
   const itemRefs: React.RefObject<HTMLDivElement>[] = items.map(() =>

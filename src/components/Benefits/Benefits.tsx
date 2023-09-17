@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { useEffect, useRef } from 'react';
 import { benefits } from '../../utils/Benefits';
 
-export function Benefits() {
+export default function Benefits() {
   const h2Ref = useRef<HTMLHeadingElement | null>(null);
   const items = [1, 2, 3, 4];
   const itemRefs: React.RefObject<HTMLDivElement>[] = items.map(() =>

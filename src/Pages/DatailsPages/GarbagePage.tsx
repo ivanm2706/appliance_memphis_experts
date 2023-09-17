@@ -28,7 +28,7 @@ function GarbagePage() {
       <section>
         <div className="container container--pi-10 container--page container--pb-mainSection">
           <h2 className="page__title">
-            {garbage.name.toUpperCase()}
+            {garbage.name.toUpperCase()} disposal
             <span>Repair</span>
           </h2>
 
@@ -148,8 +148,8 @@ function GarbagePage() {
             <div className="container container--mb-15">
               <ImageTextModule
                 p={[
-                  'Often a damaged appliance requires a replacement component. The repair will only be durable if we use good-quality spares. The professionals at Memphis Appliance Services, know how to find the best spare parts. And that is good news for you. Furthermore, our team knows which products have performed well in real-life conditions and will use those components in your repairs. That is another instance where our experience is to your benefit.',
-                  'Our team can find good-quality spares for all kinds of appliances and brands. We have spare parts for dishwashers, freezers, refrigerators, garbage disposals, ovens, ranges, and other such instruments. No matter what kind of repair you need, our team can help.',
+                  'Often a damaged appliance requires a replacement component. The repair will only be durable if we use good-quality parts. The professionals at Memphis Appliance Services, know how to find the best spare parts. And that is good news for you. Furthermore, our team knows which products have performed well in real-life conditions and will use those components in your repairs. That is another instance where our experience is to your benefit.',
+                  'Our team can find good-quality parts for all kinds of appliances and brands. We have spare parts for dishwashers, freezers, refrigerators, garbage disposals, ovens, dryers, and other appliances. No matter what kind of repair you need, our team can help.',
                 ]}
                 pStyleSecond
               >

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
-export function Questions() {
+export default function Questions() {
   const aRefQ = useRef<HTMLAnchorElement | null>(null);
   const divRefQ = useRef<HTMLDivElement | null>(null);
   const pRefQ = useRef<HTMLParagraphElement | null>(null);

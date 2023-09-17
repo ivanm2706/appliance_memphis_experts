@@ -1,9 +1,10 @@
-import React, { useEffect, ReactNode } from 'react';
-import { Benefits } from '../components/Benefits';
+import React, { useEffect, ReactNode, lazy, Suspense } from 'react';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
-import { Questions } from '../components/Questions';
-import { Steps } from '../components/Steps';
+
+const LazyBenefits = lazy(() => import('../components/Benefits/Benefits'));
+const LazySteps = lazy(() => import('../components/Steps/Steps'));
+const LazyQuestions = lazy(() => import('../components/Questions/Questions'));
 
 type Props = {
   children: ReactNode;
@@ -28,11 +29,16 @@ function Page({ children, isHomePage, isBlockAdvantages }: Props) {
 
         {isBlockAdvantages && (
           <>
-            <Benefits />
+            <Suspense fallback={<div>Loading...</div>}>
+              <LazyBenefits />
+              <LazySteps />
+              <LazyQuestions />
+            </Suspense>
+            {/* <Benefits />
 
             <Steps />
 
-            <Questions />
+            <Questions /> */}
           </>
         )}
       </main>

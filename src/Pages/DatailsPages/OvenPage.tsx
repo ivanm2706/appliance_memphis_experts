@@ -219,17 +219,11 @@ function OvenPage() {
             </ImageTextModule>
 
             <p className="page__subtitle">
-              Furthermore, we have been doing this for a long time and stay up
-              to date with all the modern amenities available in the new oven
-              and stove technology being released. When you call on the
-              professionals at Memphis Appliance Services, our techs will know
-              exactly how to fix your range, no matter the brand name or age.
+              Furthermore, we have been doing this for a long time and stay up to date with all the modern amenities available in the new oven and stove technology being released. When you call on the professionals at Memphis Appliance Services, our experts will know exactly how to fix your oven or stove, no matter the brand name or age.
             </p>
 
             <p className="page__subtitle">
-              Memphis, don’t wait another minute. The kitchen is the home of the
-              home, and the stove keeps it running after all. Let us help you by
-              fixing it.
+              Memphis, don’t wait another minute. The kitchen is the center of the home, and the stove keeps it running. Let us help you by fixing it.
             </p>
           </Frame>
         </div>
@@ -253,8 +247,7 @@ function OvenPage() {
           <div className="list">
             <p className="list__title">
               <em>
-                We promise the following standards of service for all our
-                families:
+              We promise the following standards of service for all our clients:
               </em>
             </p>
             <ul className="list--block list--block-wrap">
@@ -273,10 +266,7 @@ function OvenPage() {
           <Frame mode="dark">
             <div className="container container--center container--mb-15">
               <p className="page__text3">
-                We are ready for every job, managing projects with the skill and
-                experience our clients have come to expect. Please get in touch
-                to learn more about our team, company, or details about our
-                services in Memphis, TN.
+                We are ready for any job, and will manage projects with the skill and experience our clients have come to expect from us. Please get in touch to learn more about our team, company, or details about our services in Memphis, TN.
               </p>
             </div>
 

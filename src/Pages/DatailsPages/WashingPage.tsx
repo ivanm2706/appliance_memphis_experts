@@ -28,7 +28,7 @@ function WashingPage() {
       <section>
         <div className="container container--pi-10 container--page container--pb-mainSection">
           <h2 className="page__title">
-            {washingMashine.name.toUpperCase()}
+            {washingMashine.name.toUpperCase()} machine
             <span>Repair</span>
           </h2>
 

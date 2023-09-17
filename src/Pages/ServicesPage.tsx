@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Benefits } from '../components/Benefits';
+import Benefits from '../components/Benefits/Benefits';
 import { Frame } from '../components/Frame';
 import { ImageTextModule } from '../components/ImageTextModule';
-import { Questions } from '../components/Questions';
+import Questions from '../components/Questions/Questions';
 import { Services } from '../components/Services';
-import { Steps } from '../components/Steps';
+import Steps from '../components/Steps/Steps';
 import Tel from '../components/Tel/Tel';
 
 const repair = {
@@ -127,10 +127,7 @@ function ServicesPage() {
             Of course, there’s no need to lug the entire appliance into our
             store. We will send expert technicians to your location in fully
             equipped vans. They will have everything they need to carry out the
-            repairs promptly and ensure your appliance is running well. And in
-            the truck are spare parts, equipment, tools, and other such
-            materials, which is why most repairs don’t require more than one
-            visit.
+            repairs promptly and ensure your appliance is running well. In the truck, there are spare parts, equipment, tools, and other materials, which is why most repairs don’t require more than one visit.
           </p>
           <p className="page__subtitle">
             Additionally, most of our service calls are handled on the same day

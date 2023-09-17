@@ -11,7 +11,7 @@ export const steps = [
     step: 2,
   },
   {
-    title: 'Direct Restoration: Part replacement, tuning, adjustments.',
+    title: 'Direct Repair: Part replacement, tuning, adjustments.',
     id: 3,
     step: 3,
   },

@@ -12,7 +12,7 @@ const imageStyle = {
 };
 
 const textAboutCompany = [
-  'At Memphis Appliance Services, we base our entire business on integrity and quality. You see, since the beginning of our work careers, our family has been in the tinkering industries in one way or another. We like a good challenge, and figuring out the puzzle of these appliances is a great way to help improve the lives of the folks of Memphis, TN. After all, we live, work, and play here in the community. We want to make you proud.',
+  'At Memphis Appliance Services, we base our entire business on integrity and quality. You see, since the beginning of our work careers, our family has been involved in repairing various appliances. We like a good challenge, and figuring out the puzzle of these appliances is a great way to help improve the lives of the folks of Memphis, TN. After all, we live, work, and play here in the community. We want to make you proud.',
   'In our experience, we have learned the value of not only a good home but an appliance that works well for you. Proper maintenance and repair are an essential part of making your home run smoothly.',
 ];
 
@@ -62,8 +62,8 @@ export function CompanyPage() {
 
             <ImageTextModule
               p={[
-                'Often a damaged appliance requires a replacement component. The repair will only be durable if we use good-quality spares. The professionals at Memphis Appliance Services, know how to find the best spare parts. And that is good news for you. Furthermore, our team knows which products have performed well in real-life conditions and will use those components in your repairs. That is another instance where our experience is to your benefit.',
-                'Our team can find good-quality spares for all kinds of appliances and brands. We have spare parts for dishwashers, freezers, refrigerators, garbage disposals, ovens, ranges, and other such instruments. No matter what kind of repair you need, our team can help.',
+                'Often a damaged appliance requires a replacement component. The repair will only be durable if we use good-quality parts. The professionals at Memphis Appliance Services, know how to find the best spare parts. And that is good news for you. Furthermore, our team knows which products have performed well in real-life conditions and will use those components in your repairs. That is another instance where our experience is to your benefit.',
+                'Our team can find good-quality parts for all kinds of appliances and brands. We have spare parts for dishwashers, freezers, refrigerators, garbage disposals, ovens, dryers, and other appliances. No matter what kind of repair you need, our team can help.',
               ]}
             >
               <span
@@ -88,10 +88,7 @@ export function CompanyPage() {
             Of course, there’s no need to lug the entire appliance into our
             store. We will send expert technicians to your location in fully
             equipped vans. They will have everything they need to carry out the
-            repairs promptly and ensure your appliance is running well. And in
-            the truck are spare parts, equipment, tools, and other such
-            materials, which is why most repairs don’t require more than one
-            visit.
+            repairs promptly and ensure your appliance is running well. In the truck, there are spare parts, equipment, tools, and other materials, which is why most repairs don’t require more than one visit.
           </p>
           <p className="page__subtitle">
             Additionally, most of our service calls are handled on the same day
