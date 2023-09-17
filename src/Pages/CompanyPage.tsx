@@ -88,7 +88,9 @@ export function CompanyPage() {
             Of course, there’s no need to lug the entire appliance into our
             store. We will send expert technicians to your location in fully
             equipped vans. They will have everything they need to carry out the
-            repairs promptly and ensure your appliance is running well. In the truck, there are spare parts, equipment, tools, and other materials, which is why most repairs don’t require more than one visit.
+            repairs promptly and ensure your appliance is running well. In the
+            truck, there are spare parts, equipment, tools, and other materials,
+            which is why most repairs don’t require more than one visit.
           </p>
           <p className="page__subtitle">
             Additionally, most of our service calls are handled on the same day

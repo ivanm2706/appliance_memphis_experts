@@ -88,9 +88,7 @@ function FreezerPage() {
 
       <section>
         <div className="container container--pi-10 container--page container--pb-mainSection">
-          <h3 className="page__titleH3">
-            Keeping Your Cool with Quality
-          </h3>
+          <h3 className="page__titleH3">Keeping Your Cool with Quality</h3>
 
           <ImageTextModule
             p={[
@@ -131,12 +129,18 @@ function FreezerPage() {
             </h3>
 
             <p className="page__subtitle">
-              Some refrigerators or freezers are easy to diagnose, and others are more difficult. Leaking water or a burnt-out bulb are easy to spot,but other situations may be caused by problems that are not quite as evident. This is where our years of experience benefit you and your appliances.
+              Some refrigerators or freezers are easy to diagnose, and others
+              are more difficult. Leaking water or a burnt-out bulb are easy to
+              spot,but other situations may be caused by problems that are not
+              quite as evident. This is where our years of experience benefit
+              you and your appliances.
             </p>
 
             <p className="page__subtitle">
               Our trained technicians will carefully inspect your refrigerator
-              and freezer and correctly diagnose the root of the issue. Then we can suggest repair options for your review and consideration. That is when the repair can begin.
+              and freezer and correctly diagnose the root of the issue. Then we
+              can suggest repair options for your review and consideration. That
+              is when the repair can begin.
             </p>
           </Frame>
         </div>
@@ -149,7 +153,9 @@ function FreezerPage() {
           </h3>
 
           <p className="page__subtitle">
-            For the fastest possible repairs, our technicians carry replacement parts in their truck. If your refrigerator needs the following, we most likely have one in the truck. Common repair parts include:
+            For the fastest possible repairs, our technicians carry replacement
+            parts in their truck. If your refrigerator needs the following, we
+            most likely have one in the truck. Common repair parts include:
           </p>
 
           <div className="container container--mb-15">
@@ -222,7 +228,10 @@ function FreezerPage() {
           <Frame mode="dark">
             <div className="container container--center container--mb-15">
               <p className="text page__text3">
-                We are ready for any job, and will manage projects with the skill and experience our clients have come to expect from us. Please get in touch to learn more about our team, company, or details about our services in Memphis, TN.
+                We are ready for any job, and will manage projects with the
+                skill and experience our clients have come to expect from us.
+                Please get in touch to learn more about our team, company, or
+                details about our services in Memphis, TN.
               </p>
             </div>
             <div className="container container--maxW-800 container--center">
